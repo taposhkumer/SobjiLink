@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface":"#f9f9ff","on-tertiary-container":"#ff9f7a","primary":"#003b1b","surface-variant":"#d8e3fb","on-tertiary-fixed-variant":"#7f2b00","surface-container-high":"#dee8ff","surface-dim":"#cfdaf2","surface-container-highest":"#d8e3fb","on-tertiary":"#ffffff","on-error-container":"#93000a","inverse-surface":"#263143","surface-container-low":"#f0f3ff","on-error":"#ffffff","secondary":"#006e2f","outline-variant":"#c0c9be","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#005321","tertiary-container":"#822c00","surface-bright":"#f9f9ff","surface-container-lowest":"#ffffff","surface-tint":"#2e6a41","secondary-fixed":"#6bff8f","primary-fixed-dim":"#96d5a3","on-primary-fixed":"#00210d","secondary-fixed-dim":"#4ae176","outline":"#717970","inverse-primary":"#96d5a3","secondary-container":"#6bff8f","tertiary-fixed-dim":"#ffb599","on-primary-fixed-variant":"#12512c","primary-fixed":"#b1f2be","on-secondary":"#ffffff","on-background":"#111c2d","on-surface-variant":"#404941","tertiary":"#5d1d00","error-container":"#ffdad6","inverse-on-surface":"#ecf1ff","tertiary-fixed":"#ffdbce","surface-container":"#e7eeff","on-secondary-fixed":"#002109","on-secondary-container":"#007432","on-surface":"#111c2d","primary-container":"#14532d","on-primary-container":"#87c695","on-primary":"#ffffff","background":"#f9f9ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","gutter":"1.25rem","space-lg":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem"},"fontFamily":{"headline-md":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"label-lg":["Inter"],"headline-lg":["Manrope"],"label-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"title-md":["Manrope"],"title-lg":["Manrope"],"headline-xl":["Manrope"],"headline-xl-mobile":["Manrope"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52px","fontWeight":"800"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="h-20 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Shobji<span class="text-secondary">Link</span></span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><p class="font-label-sm text-label-sm text-on-surface-variant hidden lg:block leading-none">Fresh from the Source. Delivered to Your Door.</p></div></div><div class="relative hidden xl:flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span><div class="flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Supply Hub</span><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span></div><select aria-label="Regional Location Hub" class="bg-transparent font-label-md text-label-md text-on-surface font-semibold focus:outline-none cursor-pointer pr-1"><option value="dhaka-north">Dhaka North (Savar Direct)</option><option value="sylhet-sadar">Sylhet Sadar Aroths</option><option value="chattogram-hub">Chattogram Logistics Hub</option></select></div></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full bg-surface-container-low rounded-lg px-3 py-2"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search fresh vegetables, upazila lots..." type="text"/><div class="hidden lg:flex items-center px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm uppercase font-mono">/</div></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center bg-surface-container-low rounded-lg p-0.5"><button class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-label-md text-label-md font-semibold text-primary shadow-sm" type="button">EN</button><button class="px-2.5 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface" type="button">বাংলা</button></div><div class="flex items-center gap-1"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Wishlist" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">favorite</span></button></div><a class="flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-all" data-path="cart-checkout" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Cart (3) • ৳160</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-12 flex items-center justify-between border-t border-outline-variant/30"><nav class="flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="shop-vegetables" href="#">Shop Vegetables</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="wholesale-b2b" href="#">Wholesale &amp; B2B</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="track-order" href="#">Track Order</a></nav><div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1 rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Portal:</span><select aria-label="Select System Role" class="bg-transparent font-label-sm text-label-sm text-primary font-semibold focus:outline-none cursor-pointer"><option value="customer">Customer Mode</option><option value="supplier">Supplier / Grower</option><option value="branch-qa">Branch QA Inspection</option><option value="delivery">Delivery Fleet</option><option value="admin">Central Admin</option></select></div></div></div></header><main class="w-full pt-32 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Interactive Agricultural Taxonomy Page Content Wrapper -->
+<div class="max-w-[1440px] mx-auto px-margin-desktop w-full pb-space-xl">
+<!-- Breadcrumb & Top Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 py-space-md">
+<nav aria-label="Breadcrumbs" class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Home
+        </a>
+<span class="text-outline-variant">/</span>
+<span class="font-semibold text-primary">Produce Taxonomy &amp; Categories</span>
+</nav>
+<!-- Quick Hub Switcher Pill Selector -->
+<div class="flex items-center gap-2 bg-surface-container-low p-1 rounded-full shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-3 font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">warehouse</span>
+          Active Sourcing Hub:
+        </span>
+<button class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          Sylhet Sadar Aroths (24 lots)
+        </button>
+<button class="px-3 py-1 rounded-full hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium transition-colors" type="button">
+          Dhaka North (38 lots)
+        </button>
+<button class="px-3 py-1 rounded-full hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium transition-colors" type="button">
+          Chattogram Mandi (31 lots)
+        </button>
+</div>
+</div>
+<!-- Page Header & Visual Taxonomy Abstract Banner -->
+<div class="relative bg-surface-container-low rounded-xl p-6 lg:p-8 mt-2 overflow-hidden shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<div class="lg:col-span-8 space-y-3">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider font-bold">
+              National Agritech Index 2025
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+              DAE Extension Standard
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Updated 24 mins ago</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-extrabold">
+            Explore Fresh Produce Taxonomy
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            Directly mapped to 12+ Upazila sourcing clusters across Sylhet, Rangpur, Bogura, and Chattogram. Filter through verified harvest cycles, cold-chain telemetry, and live regional aroth reserves.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychiatry</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase leading-none">Registered Varietals</p>
+<p class="font-title-md text-title-md text-primary font-bold">54 Local Strains</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase leading-none">Upazila Collection Aroths</p>
+<p class="font-title-md text-title-md text-primary font-bold">18 Cold Points</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">bolt</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase leading-none">Pre-Dawn Logistics</p>
+<p class="font-title-md text-title-md text-primary font-bold">&lt; 4 Hours Transit</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Visual Widget: Quality Index Gauges -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-5 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">temp_preferences_custom</span>
+              Sylhet Hub Quality Telemetry
+            </span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+</div>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Cold Van Core Temp (Vegetables)</span>
+<span class="font-semibold text-primary">6.4°C / 8°C optimal</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Field Moisture Retention Index</span>
+<span class="font-semibold text-primary">94.2%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>DAE Pesticide Clearance Purity</span>
+<span class="font-semibold text-primary">Grade A+ (99.8%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 99%"></div>
+</div>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant pt-1 text-center">
+            Zero chemical ripening agent guarantee across all 6 main categories.
+          </p>
+</div>
+</div>
+</div>
+<!-- Filter Bar & Search Taxonomy Bar -->
+<div class="mt-8 space-y-4">
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col lg:flex-row items-center justify-between gap-4">
+<!-- Search Field -->
+<div class="relative w-full lg:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search crop or strain (e.g., 'Palong Shak', 'Diamond Alu', 'Lau')..." type="text"/>
+</div>
+<!-- Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 w-full lg:w-auto justify-start lg:justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mr-1">Condition:</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[15px]">eco</span>
+            In-Season Now (Winter Peak)
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+            High Margin Lots
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span>
+            Cold-Chain Ready
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">military_tech</span>
+            Export Grade A+
+          </button>
+</div>
+</div>
+<!-- Category Navigation Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold shrink-0 shadow-sm" type="button">
+          All Produce Categories (8)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Leafy Greens (শাক - Shak)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Root Tubers &amp; Potatoes (আলু ও মূলজাত)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Gourds &amp; Climbers (লাউ ও পটল)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Eggplants &amp; Solanaceous (বেগুন ও টমেটো)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Aromatics &amp; Chillies (পেঁয়াজ ও মরিচ)
+        </button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">
+          Beans &amp; Winter Pods (শিম ও ঢেঁড়শ)
+        </button>
+</div>
+</div>
+<!-- Interactive Category Taxonomy Grid -->
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Category Card 1: Leafy Greens -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<!-- Thumbnail & Status Tag -->
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant bundle of freshly harvested Bangladeshi green spinach (Palong Shak) and red amaranth (Lal Shak) with morning dew drops under crisp morning farm sunlight on a clean wooden crate, organic fresh agricultural styling, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRaeSMlFhroBkHf3k8MlHcvhvqI1XixBOiny5g9kxoYLdtIH_9R40ORxXwKdVpkWsuJLqYVj7IQ6KliNkJXRqbCrUteQzn2oMURxEL3KprnQ8vOzWZelu9CrGJEEpE-E6HY74d_yWp_Om4WU2Ms0nbDx8YpEMXzlK1bFaHyg7v45sHuEDmG7SSiGuTxtbGMlxq92-RZ3GlXG5l71vVCZ6oELEO61yInlKMYEANt0zvwWGGzEVaQwr0wA"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">timer</span>
+                Harvested Pre-Dawn
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              185 bundles live
+            </div>
+</div>
+<!-- Header Titles -->
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Leafy Greens</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(শাক - Shak)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Brassicaceae &amp; Amaranthaceae</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0">
+              Grade A+
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Harvested pre-dawn, chilled river water misted, and dispatched in direct cold vans within 4 hours to preserve nutrient crispness.
+          </p>
+<!-- Origin & Cluster Source -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Sreemangal &amp; Golapganj Silt Plains</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Live Stock in Hub:</span>
+<span class="font-bold text-secondary">Sylhet Sadar (185 Bunches)</span>
+</div>
+</div>
+<!-- Key Varieties Chips -->
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Palong Shak</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Lal Shak</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Pui Shak</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Kolmi Shak</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Shorshe Shak</span>
+</div>
+</div>
+</div>
+<!-- Price Range & Action Footer -->
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳20 – ৳45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ bunch</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Shak</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Card 2: Root Tubers & Potatoes -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High quality clean Bogura Diamond potatoes and fresh red potatoes piled neatly on natural burlap cloth with rich organic soil background, bright diffuse morning light, close up fresh farm product shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfDfcJos3MrkdW5oGkPLGwGhaegLODGxqKVWp11t6izqMYeXSp4DaHtasPF7YJ7YPVUG683JMx0ociXy6lvXws8ikFoxCmfM2M_QUQDEA5e-BOlvxmksZ9cbWdo9BUG1TJsH2JfWeUkBJ-0LsAPO8uTC0sjnImOyR2zbQDoqZ-sqEXDfBDUFwU58qUq-taGp2pTQWNEWgPtqNeOQsuZTLnvhhW5sbnC2ZfJVLmLGXaOkDlsB3fIA3NRQ"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">ac_unit</span>
+                Cold-Storage Conditioned
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              420 kg across 3 Hubs
+            </div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Root Tubers</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(আলু ও মূলজাত)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Solanum tuberosum &amp; Raphanus</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0">
+              Bulk Ready
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Cold-storage conditioned tubers with high starch index, uniform sorting sizes, low moisture decay, and extended kitchen shelf life.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Shibganj (Bogura) &amp; Panchagarh</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Hub Inventory:</span>
+<span class="font-bold text-secondary">Sylhet: 200 kg active stock</span>
+</div>
+</div>
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Bogura Diamond Alu</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Lal Deshi Alu</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Mula (White Radish)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Misti Alu (Sweet)</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳28 – ৳45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Tubers</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Card 3: Gourds & Climbers -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tender light green bottle gourds (Lau) and textured bitter gourds (Korola) hanging in a lush green agricultural trellis garden in rural Bangladesh, soft warm sunlight, high detail professional farm photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJg-qFqfNuPBwrGGauDZbPQPD_wiZMIGwnFhlrDm9e5v0z1VPgdwwAgeOyOrq_s7xgm3VnaD8Jzfex9QbhkYbjolarN_POtH8cUXoUfc6sJBvHvhCK5mo0XxDKw1BjBwqUYXdqdmLFerTJg4IJEj4YhHr_2knkqcKEU9HmLn76NV67FvQ5CrijoMZ8IWs0PfSSzfJMjR7EBsmC7pJN0S6-5Qx28ksGwTeUtxP1k3XpW5Kb2RgnHIqC5Q"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">shield_with_heart</span>
+                Pesticide Monitored
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              140 pcs available
+            </div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Gourds &amp; Climbers</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(লাউ ও পটল)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Cucurbitaceae</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0">
+              High Demand
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            High natural water content, tender pulp, thin skin riverbank cultivation. Ideal for urban households and cloud restaurant batches.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Narsingdi &amp; Nabiganj</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Hub Inventory:</span>
+<span class="font-bold text-secondary">Sylhet: 140 pcs on rack</span>
+</div>
+</div>
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Green Lau (Bottle Gourd)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Potol (Pointed Gourd)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Korola</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Chichinga</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Jhinga</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳35 – ৳60</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ pc / kg</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Gourds</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Card 4: Eggplants & Solanaceous -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Deep glossy purple round Bangladeshi eggplants (Gol Begun) and vibrant ripe red tomatoes arranged in artisanal bamboo wicker baskets at a clean rural wholesale aggregation center, rich colors and natural morning lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD9LUmhQGwyiqCVoXc6QvQfwW3-ovP1STWjOaLGeq9gNxihe6KoZtdIiLstVePvQQQrBG-JS7L9X5jNiFWGbqqsx3kllHMwtROzqL_SjVYuWJiCs8dTih0Jvv_QziI4wFUO7J0H4y5nAn-rp_5a_p6MuZeJKhoqZkfYyUQdGGPfKWKrBFOqg-qiRHZMqE97mgmCCI8BZRQjG846WWD_7jqmDiaUVWT2auwNrk8BKnM2LEgUSVfaWi-Tg"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">workspace_premium</span>
+                Low Seed Firm Pulp
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              Sylhet: 80 kg Begun
+            </div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Eggplants &amp; Solanaceous</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(বেগুন ও টমেটো)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Solanaceae Family</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold shrink-0">
+              Daily Gate
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Glossy purple skin, low-seed pulp varieties with daily farm-gate arrivals. Fresh batches tested against fruit borer infestation.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Habiganj Agro-cluster &amp; Moulvibazar</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Restock Status:</span>
+<span class="font-bold text-tertiary">Tomatoes restock transit in 3h</span>
+</div>
+</div>
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Habiganj Gol Begun</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Tal Begun</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Deshi Sreemangal Tomato</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Shuktara Eggplant</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳55 – ৳85</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Begun</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Card 5: Aromatics & Chillies -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pungent spicy green chillies (Kacha Morich), air-dried red onions (Deshi Peyaj), and fresh garlic cloves displayed on a clean rustic Bangladesh market stall table, warm rich contrast, authentic agritech produce photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTDIRjQ39sDfWjXLilX9QiZvH-Ga1cKDP2X-9QB-5cYk9gshftReeu_MNCrNc_fjwDa6zC7rl_U-3kub9tU2buFHMhLX7y8UYgRetiTS2IArC5h8W8ncNVzouFPn8XuzzgrACgB5TCNxO8ZVhJDao9-baUuAnAJytInAy82Gd5H_piF7lgmjOQl_YcuVLK2MJX4m4kPiLiz2bSr74jLX3Kog97KBxRhpBdx6DrcqD8XB2iIEKzhypZKQ"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">whatshot</span>
+                High Capsaicin Index
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              65 kg active
+            </div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Aromatics &amp; Alliums</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(পেঁয়াজ ও মরিচ)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Allium cepa &amp; Capsicum annuum</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0">
+              Essential
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Pungent capsaicin chillies, natural air-dried red onions with dense moisture-sealed layers, and aromatic pungent ginger clusters.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Sariakandi Riverbank &amp; Pabna</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Hub Inventory:</span>
+<span class="font-bold text-secondary">Sylhet: 65 kg active reserve</span>
+</div>
+</div>
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Kacha Morich (Green Chilli)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Pabna Deshi Peyaj</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Natore Garlic</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Pahari Ada (Ginger)</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳75 – ৳140</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Spices</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Category Card 6: Beans, Pods & Gourds -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden bg-surface-container-low mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fresh tender green flat beans (Deshi Shim) and tender okras (Dherosh) sorted systematically into clean green transport crates in a modern farm aggregation shed in Bangladesh, bright natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7Ldy2SdS2jzGh1g5djJ23t4JBTll3cp_tksXgFf-Rmk8dhlxGlGb_jZ7mCGEKqGDx7bXupL9fy1SxR1Sb1AxRgG-KJL3kLS7S-aqMnTP3p9YclXLBqk86gs1EREvSyK2qt2N-AFnVFr6xF191JiePCXjxDFCP0iMT5M5nixiGHb8b-QChv0HZ0RLrLa0v0bJOBB30dLMRYuaAnL6qAbBKgTPC43vBregfUN4ikPc9cy82ybPJQecSRQ"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-primary-container/90 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">grain</span>
+                Winter Harvest Peak
+              </span>
+</div>
+<div class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-bold shadow-sm">
+              90 kg available
+            </div>
+</div>
+<div class="flex items-start justify-between gap-2">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Beans &amp; Winter Pods</h3>
+<span class="text-secondary font-semibold font-headline-sm text-headline-sm">(শিম ও ঢেঁড়শ)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Taxonomy: Fabaceae &amp; Malvaceae</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shrink-0">
+              Peak Crop
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Crisp winter pods, fiber-rich, stringless varieties sorted directly by agricultural extension workers at upazila collection centers.
+          </p>
+<div class="mt-4 p-3 rounded-lg bg-surface-container-low space-y-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">pin_drop</span>
+                Primary Upazila Source:
+              </span>
+<span class="font-bold text-on-surface">Jashore &amp; Moulvibazar</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Hub Inventory:</span>
+<span class="font-bold text-secondary">Sylhet: 90 kg available</span>
+</div>
+</div>
+<div class="mt-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold mb-1.5">Key Strains &amp; Lots:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Auto Shim</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Deshi Shim</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Dherosh (Okra)</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container font-label-sm text-label-sm text-on-surface">Borboti (Long Beans)</span>
+</div>
+</div>
+</div>
+<div class="mt-5 pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Price Range</span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳40 – ৳70</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span>Browse Beans</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Upazila Harvesting Calendar & Seasonal Influx Matrix -->
+<div class="mt-12 bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Agronomic Matrix
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Winter 2024–2025</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-extrabold mt-1">
+            Upazila Harvesting Calendar &amp; Seasonal Influx
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Real-time harvest cycle index indicating seasonal supply peaks versus pre-monsoon transition across key Bangladesh farming districts.
+          </p>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span>Peak Harvest (100%)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed"></span>
+<span>Moderate (65%)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span>
+<span>Lean / Transit (20%)</span>
+</div>
+</div>
+</div>
+<!-- Interactive Data Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<th class="py-3 px-4 rounded-l-lg">Produce Category</th>
+<th class="py-3 px-3">Primary Origin Upazila</th>
+<th class="py-3 px-2 text-center">Nov</th>
+<th class="py-3 px-2 text-center bg-primary-container/10 font-bold text-primary">Dec (Now)</th>
+<th class="py-3 px-2 text-center bg-primary-container/10 font-bold text-primary">Jan</th>
+<th class="py-3 px-2 text-center">Feb</th>
+<th class="py-3 px-2 text-center">Mar</th>
+<th class="py-3 px-2 text-center">Apr</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Expected Farm-Gate Rate</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Winter Leafy Greens (Palong, Lal Shak)
+              </td>
+<td class="py-3 px-3 text-on-surface-variant">Golapganj &amp; Sreemangal</td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">65%</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Peak</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Peak</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">80%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">30%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">15%</span></td>
+<td class="py-3 px-4 text-right font-bold text-primary">৳18 – ৳25 / bundle</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Winter Pods (Auto &amp; Deshi Shim)
+              </td>
+<td class="py-3 px-3 text-on-surface-variant">Jashore Sadar &amp; Moulvibazar</td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">50%</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Peak</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">95%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">70%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">25%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">10%</span></td>
+<td class="py-3 px-4 text-right font-bold text-primary">৳35 – ৳45 / kg</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Potatoes (Bogura Diamond &amp; Lal)
+              </td>
+<td class="py-3 px-3 text-on-surface-variant">Shibganj &amp; Panchagarh</td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Cold Store</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">70% (New Crop)</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Influx</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Influx</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">85%</span></td>
+<td class="py-3 px-4 text-right font-bold text-primary">৳24 – ৳32 / kg</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-semibold text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Alliums (Pabna Deshi Red Onions)
+              </td>
+<td class="py-3 px-3 text-on-surface-variant">Santhia &amp; Sariakandi</td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Hali Influx</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">60%</span></td>
+<td class="py-3 px-2 text-center bg-primary-container/5"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">85% Murikata</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100% Main Crop</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">100%</span></td>
+<td class="py-3 px-2 text-center"><span class="px-2 py-0.5 rounded bg-secondary-fixed font-label-sm text-label-sm">75%</span></td>
+<td class="py-3 px-4 text-right font-bold text-primary">৳60 – ৳80 / kg</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Traceability Certification Banner -->
+<div class="mt-6 pt-5 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface-container-low p-4 rounded-lg">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-primary font-bold">Govt DAE Batch Traceability Guaranteed</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Every category shipment holds a Department of Agricultural Extension (DAE) upazila field clearance QR certificate.
+            </p>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-bold shadow-sm transition-colors shrink-0" type="button">
+          Verify Sample QR Batch
+        </button>
+</div>
+</div>
+<!-- Dual Commercial Supply Callout: B2B Wholesale Matrix & Household Weekly Crate -->
+<div class="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-6">
+<!-- B2B Commercial Callout -->
+<div class="lg:col-span-7 bg-primary text-on-primary rounded-xl p-6 lg:p-8 relative overflow-hidden flex flex-col justify-between shadow-md">
+<div class="absolute -right-12 -bottom-12 w-64 h-64 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Wholesale &amp; Aroths Direct
+            </span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Maund (মন) Tier Pricing</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold tracking-tight text-on-primary">
+            Procuring by the Maund (40 kg Crate) for Commercial Kitchens or Supermarkets?
+          </h3>
+<p class="font-body-md text-body-md text-on-primary-container mt-2 max-w-xl leading-relaxed">
+            Directly connect your restaurant chain, corporate catering, or retail chain to daily morning mandi auctions in Bogura, Jashore, and Sylhet with volume rebate contracts.
+          </p>
+<div class="grid grid-cols-3 gap-3 my-5">
+<div class="bg-primary-container p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Diamond Alu (Maund)</span>
+<span class="font-title-lg text-title-lg font-bold text-on-primary">৳1,120</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">40 kg crate</span>
+</div>
+<div class="bg-primary-container p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Deshi Begun (Maund)</span>
+<span class="font-title-lg text-title-lg font-bold text-on-primary">৳2,100</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">40 kg crate</span>
+</div>
+<div class="bg-primary-container p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-on-primary-container block">Green Lau (Lot of 50)</span>
+<span class="font-title-lg text-title-lg font-bold text-on-primary">৳1,650</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Direct farm load</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="px-5 py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 font-label-md text-label-md font-bold flex items-center gap-2 shadow-sm transition-all" data-path="wholesale-b2b" href="#">
+<span>Switch to B2B Wholesale Matrix</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+<span class="font-label-sm text-label-sm text-on-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+            Early morning 5:00 AM delivery guaranteed
+          </span>
+</div>
+</div>
+<!-- Household Curated Weekly Basket -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-6 lg:p-8 flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Family Saver Crate
+            </span>
+<span class="font-title-lg text-title-lg text-primary font-extrabold">৳580</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold mt-3">
+            5-Category Mixed Harvest Assortment
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Hand-curated weekly fresh vegetables box containing essentials for a household of 4 to 5 persons.
+          </p>
+<ul class="mt-4 space-y-2 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>2.5 kg Bogura Diamond Potatoes</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>3 Bunches Fresh Palong Shak &amp; Lal Shak</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>1 pc Tender Green Lau (Bottle Gourd)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>1 kg Habiganj Deshi Begun &amp; 500g Fresh Tomato</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span>250g Kacha Morich + 500g Pabna Red Onion</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/30 flex items-center gap-3">
+<button class="flex-1 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+            Add Weekly Crate (৳580)
+          </button>
+<button class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" title="Customize Box items" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Agro-Economic Glossary Pill Strip -->
+<div class="mt-10 p-4 rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-4 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Agricultural Glossary:</span>
+<span class="text-on-surface-variant"><strong>Maund (মন):</strong> 40 kg standard agricultural lot unit.</span>
+<span class="hidden md:inline">•</span>
+<span class="text-on-surface-variant hidden md:inline"><strong>Aroth (আড়ৎ):</strong> Primary aggregation center directly at grower upazilas.</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="font-label-md text-label-md font-bold text-primary hover:underline flex items-center gap-1" data-path="shop-vegetables" href="#">
+          Explore All Individual Vegetable Listings
+          <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low pt-12 pb-8 mt-12"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10"><div class="md:col-span-1"><div class="flex items-center gap-2 mb-3"><div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">eco</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">ShobjiLink</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Digitizing Bangladesh's agricultural supply chain directly from regional aroths to commercial kitchens and urban homes.</p><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Government Certified Agritech</span></div></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Fresh Produce</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Daily Field Greens</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Seasonal Gourds &amp; Melons</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Root Crops &amp; Potatoes</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Organic Certified Batches</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Logistics &amp; Hubs</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Cold Chain Telemetry</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Bogra Regional Mandi</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Jessore Transit Station</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Upazila Collection Centers</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Support &amp; Trust</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><p class="font-label-md text-label-md text-on-surface font-medium">Dhaka Central Dispatch</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">+880 1700-000000</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">support@shobjilink.com.bd</p></li><li class="pt-2"><span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Dispatch Active: 04:00 AM - 11:00 PM</span></li></ul></div></div><div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 ShobjiLink Smart Agriculture Logistics. All rights reserved.</p><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Fair Price Charter</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">QA Standards</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Privacy Policy</a></div></div></div></footer></body></html>

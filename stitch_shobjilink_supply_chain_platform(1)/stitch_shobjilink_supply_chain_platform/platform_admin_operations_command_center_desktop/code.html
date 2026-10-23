@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary":"#006e2f","primary-fixed":"#b1f2be","on-error-container":"#93000a","on-tertiary-container":"#ff9f7a","primary-container":"#14532d","surface-dim":"#cfdaf2","on-secondary-fixed":"#002109","surface-container":"#e7eeff","outline":"#717970","on-tertiary-fixed-variant":"#7f2b00","surface-tint":"#2e6a41","on-surface":"#111c2d","on-secondary":"#ffffff","inverse-on-surface":"#ecf1ff","on-secondary-fixed-variant":"#005321","tertiary-fixed-dim":"#ffb599","on-secondary-container":"#007432","surface":"#f9f9ff","tertiary":"#5d1d00","error-container":"#ffdad6","surface-container-lowest":"#ffffff","inverse-primary":"#96d5a3","on-primary-fixed":"#00210d","surface-variant":"#d8e3fb","surface-container-highest":"#d8e3fb","surface-container-high":"#dee8ff","background":"#f9f9ff","on-error":"#ffffff","on-primary-container":"#87c695","on-primary":"#ffffff","inverse-surface":"#263143","tertiary-container":"#822c00","on-surface-variant":"#404941","primary-fixed-dim":"#96d5a3","on-background":"#111c2d","secondary-fixed-dim":"#4ae176","on-tertiary":"#ffffff","tertiary-fixed":"#ffdbce","on-primary-fixed-variant":"#12512c","surface-bright":"#f9f9ff","error":"#ba1a1a","primary":"#003b1b","surface-container-low":"#f0f3ff","secondary-container":"#6bff8f","on-tertiary-fixed":"#370e00","outline-variant":"#c0c9be","secondary-fixed":"#6bff8f"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.25rem","gutter-desktop":"1.5rem","margin-tablet":"1.5rem","margin":"1rem","margin-desktop":"2.5rem","space-sm":"0.5rem","space-xl":"2.5rem","space-md":"1rem"},"fontFamily":{"headline-sm":["Manrope"],"headline-xl-mobile":["Manrope"],"label-lg":["Inter"],"headline-xl":["Manrope"],"body-sm":["Inter"],"body-md":["Inter"],"headline-md":["Manrope"],"title-md":["Manrope"],"title-lg":["Manrope"],"label-sm":["Inter"],"headline-lg-mobile":["Manrope"],"body-lg":["Inter"],"headline-lg":["Manrope"],"label-md":["Inter"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"800"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52px","fontWeight":"800"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">agriculture</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ShobjiLink</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Agri Supply Chain OS</span></div></div><div class="px-space-md py-space-sm bg-surface-container-low/50"><div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><span>NETWORK STATUS</span><span class="flex items-center gap-1 text-secondary font-label-sm"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Online</span></div></div><nav class="flex-1 overflow-y-auto px-space-sm py-space-sm space-y-1" data-active-classes="bg-primary-container text-on-primary font-title-md"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg transition-all bg-primary-container text-on-primary font-title-md" data-path="command-center" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Command Center</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="branch-inbound-qa" href="#"><span class="material-symbols-outlined text-[20px]">fact_check</span><span>Branch Inbound &amp; QA</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="regional-inventory" href="#"><span class="material-symbols-outlined text-[20px]">warehouse</span><span>Regional Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="reefer-logistics-fleet" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Reefer Logistics &amp; Fleet</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="suppliers-upazila-aroths" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Suppliers &amp; Upazila Aroths</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="commercial-b2b" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span>Commercial B2B</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="financial-settlements" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Financial Settlements</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-all" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>System Settings</span></a></nav></div><div class="p-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest"><span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Logistics Helpdesk</span><span class="font-label-sm text-label-sm text-on-surface-variant">Toll Free 16244</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-primary text-[18px]">pin_drop</span><label class="sr-only" for="hub-select">Regional Hub</label><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer" id="hub-select"><option value="dhaka-north">Dhaka North Central Hub</option><option value="sylhet-sadar">Sylhet Sadar Aroth Hub</option><option value="chattogram">Chattogram Agrabad Hub</option></select></div><div class="flex items-center gap-2 px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed"><span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span><span class="material-symbols-outlined text-[16px]">ac_unit</span><span class="font-label-md text-label-md tracking-tight">Reefer fleet at 8.4°C (Normal)</span></div></div><div class="flex items-center gap-space-md"><button aria-label="Alerts" class="relative p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">admin_panel_settings</span><span class="font-label-md text-label-md text-on-surface">Platform Admin &amp; Ops Lead</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Operations Command Content Area -->
+<div class="px-space-lg py-space-md space-y-space-lg">
+<!-- Executive Header Section -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<!-- Ambient subtle agritech gradient backdrop -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<!-- Breadcrumbs & Meta Tag -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span>Home</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Command Center</span>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Live Sourcing Cycle 24-B • Sylhet, Bogura, Chattogram Active</span>
+</div>
+</div>
+<!-- Main Title & Operational Controls Row -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-1 relative z-10">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">National Produce Operations &amp; Regional Logistics Command</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Automated Cold-Chain Telemetry, Upazila Procurement Inflow &amp; Inter-Hub Balances</p>
+</div>
+<!-- Shift Picker & Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-2 px-space-md py-2 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">schedule</span>
+<span>Today (Morning Harvest Shift • 04:00 AM - 12:00 PM)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg transition-all active:scale-[0.98]" id="btn-transfer">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Trigger Inter-Hub Transfer</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded-lg transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>Export Mushak-6.3 Manifest</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md rounded-lg shadow-sm transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span>Dispatch Reefer Truck</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4-Card Top KPI Metric Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1: Gross Tonnage Moved -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Gross Tonnage Moved</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">scale</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">48.6</span>
+<span class="font-title-lg text-title-lg text-on-surface-variant">MT</span>
+<span class="inline-flex items-center text-secondary font-label-md text-label-md ml-auto">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+              +14.2%
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Today's inflow vs yesterday harvest cycle</p>
+</div>
+<div class="pt-space-xs bg-surface-container-low/60 rounded-lg p-2.5 space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface">
+<span>B2B Bulk: 38.2 MT</span>
+<span>Direct Retail: 10.4 MT</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container rounded-l-full" style="width: 78.6%"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 21.4%"></div>
+</div>
+</div>
+</div>
+<!-- KPI 2: Real-Time GMV / Invoiced -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Real-Time GMV / Invoiced</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">৳1,842,500</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">42 orders cleared from wholesale aroths</p>
+</div>
+<div class="pt-space-xs bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">hourglass_top</span>
+<span>৳428,000 pending</span>
+</div>
+<span class="font-semibold text-secondary">98.4% Auto-reconciled</span>
+</div>
+</div>
+<!-- KPI 3: Cold-Chain Integrity -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Cold-Chain Integrity</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">ac_unit</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-secondary tracking-tight">99.2%</span>
+<span class="font-title-md text-title-md text-secondary">Compliant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">&lt; 9.0°C telemetry across active reefer fleet</p>
+</div>
+<div class="pt-space-xs bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">14 Trucks Monitored</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            0 Spoiled Lots Logged
+          </span>
+</div>
+</div>
+<!-- KPI 4: On-Time Upazila Sourcing -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">On-Time Upazila Sourcing</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</div>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl text-on-surface tracking-tight">94.8%</span>
+<span class="font-title-md text-title-md text-primary font-semibold">SLA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Avg procurement dispatch lag: 22 mins</p>
+</div>
+<div class="pt-space-xs bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">3 Active Transits</span>
+<span class="text-on-surface-variant">1 Bay Docking Soon</span>
+</div>
+</div>
+</div>
+<!-- Regional Hub Stock Matrix & Balance (Scenario Spotlight) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-title-lg text-title-lg text-on-surface">Regional Hub Stock Matrix &amp; Live Balance</h2>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-container text-on-primary font-medium">Auto-Balancing ON</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cross-district rebalancing state across primary aggregation &amp; retail staging centers</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded bg-secondary-fixed"></span> Optimal
+          </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded bg-tertiary-fixed-dim"></span> Low Buffer
+          </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded bg-error"></span> Stockout Alert
+          </span>
+</div>
+</div>
+<!-- Hubs Trio Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Hub 1: Sylhet Sadar Hub -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between hover:bg-surface-variant/40 transition-colors">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">East Division Hub</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Sylhet Sadar Aroth Hub</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Subidbazar Cold Depot • Sylhet-3100</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">thermostat</span>
+                  10.8°C
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Normal Range</span>
+</div>
+</div>
+<!-- Commodity Allocation Items -->
+<div class="space-y-2.5 pt-2">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">nutrition</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Diamond Potatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lot #BOG-891</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface font-bold">200 kg</span>
+<div class="text-secondary font-label-sm text-label-sm font-semibold">Optimal</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">eco</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Deshi Begun (Eggplant)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lot #JES-410</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface font-bold">80 kg</span>
+<div class="text-secondary font-label-sm text-label-sm font-medium">Balanced</div>
+</div>
+</div>
+<!-- Item 3 - Critical Warning -->
+<div class="bg-error-container/40 p-2.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">warning</span>
+<div>
+<div class="font-label-md text-label-md text-on-error-container font-bold">Roma Tomatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Inbound from Moulvibazar</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-error font-bold">0 kg</span>
+<div class="text-error font-label-sm text-label-sm font-bold uppercase tracking-tight">CRITICAL STOCKOUT</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Truck #SYL-409 arriving ~07:15 AM</span>
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors">
+              Prioritize Bay 2
+            </button>
+</div>
+</div>
+<!-- Hub 2: Chattogram Mandi -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between hover:bg-surface-variant/40 transition-colors">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Port Belt Mandi</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Chattogram Mandi Hub</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Agrabad Commercial Logistics Zone</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">thermostat</span>
+                  11.9°C
+                </span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Marginal High</span>
+</div>
+</div>
+<!-- Commodity Allocation Items -->
+<div class="space-y-2.5 pt-2">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">nutrition</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Diamond Potatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lot #BOG-702</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface font-bold">200 kg</span>
+<div class="text-secondary font-label-sm text-label-sm font-semibold">Optimal</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">egg</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Roma Tomatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Buffer Depletion Risk</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-tertiary font-bold">50 kg</span>
+<div class="text-tertiary font-label-sm text-label-sm font-semibold">Low Buffer</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">cancel</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Deshi Begun</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Inbound on CTG-118</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface-variant font-bold">0 kg</span>
+<div class="text-on-surface-variant font-label-sm text-label-sm font-medium">Stockout Stage</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ETA 08:45 AM from Jessore</span>
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface hover:bg-surface-container-high font-label-sm text-label-sm font-semibold transition-colors">
+              Request Stock Pull
+            </button>
+</div>
+</div>
+<!-- Hub 3: Dhaka North (Savar) -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between hover:bg-surface-variant/40 transition-colors">
+<div class="space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Mega Central Terminal</span>
+<h3 class="font-title-md text-title-md text-primary font-bold">Dhaka North Hub (Savar)</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Aminbazar Expressway Logistics Park</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">thermostat</span>
+                  11.2°C
+                </span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Optimal Cold Room</span>
+</div>
+</div>
+<!-- Commodity Allocation Items -->
+<div class="space-y-2.5 pt-2">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">local_shipping</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Diamond Potatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Allocated to Sylhet Feed</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface-variant font-bold">0 kg</span>
+<div class="text-primary font-label-sm text-label-sm font-medium">Transit Restock</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Roma Tomatoes</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Grade A Certified</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface font-bold">100 kg</span>
+<div class="text-secondary font-label-sm text-label-sm font-semibold">Optimal</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-2.5 rounded-lg flex items-center justify-between shadow-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Deshi Begun</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Santhia Direct Inflow</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-on-surface font-bold">60 kg</span>
+<div class="text-secondary font-label-sm text-label-sm font-semibold">Optimal</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Available for Emergency Transfer</span>
+<button class="px-3 py-1.5 rounded-md bg-secondary-fixed text-on-secondary-fixed hover:bg-secondary-fixed-dim font-label-sm text-label-sm font-bold transition-colors">
+              Dispatch Surplus
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Active Reefer Fleet & Inbound Logistics Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">directions_boat_filled</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">Active Reefer Fleet &amp; Upazila Sourcing Feed</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time GPS telemetry, cold room sensors, and QA pre-clearance gate entries</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>14 Reefers en route</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Filter routes">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Modern Borderless Data Table with Background Tiers -->
+<div class="overflow-x-auto -mx-space-lg px-space-lg">
+<table class="w-full text-left font-body-md text-body-md border-collapse min-w-[980px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg font-semibold">Truck ID &amp; Driver</th>
+<th class="py-3 px-4 font-semibold">Origin Upazila Aroth</th>
+<th class="py-3 px-4 font-semibold">Destination Branch</th>
+<th class="py-3 px-4 font-semibold">Payload &amp; Commodity</th>
+<th class="py-3 px-4 font-semibold">Live Reefer Temp</th>
+<th class="py-3 px-4 font-semibold">ETA &amp; Route Status</th>
+<th class="py-3 px-4 rounded-r-lg font-semibold">QA Pre-Clearance</th>
+</tr>
+</thead>
+<tbody class="space-y-1">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface">
+<div class="font-semibold text-primary">#DH-782 (10-Ton)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Rafiqul Islam • +88017-XXXX</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Bogura Mandi Hub</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Upazila: Shibganj Depot</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Sylhet Sadar Hub</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Bay 1 Inbound</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">3.8 MT</div>
+<div class="font-body-sm text-body-sm text-secondary font-medium">Diamond Potatoes (Jute Sack)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span>
+                  7.2°C (Normal)
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                  ETA: 06:20 AM
+                </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Jamuna Link • In Transit (92 km/h)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                  Pre-cleared Grade A+
+                </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors bg-surface-container-low/30">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface">
+<div class="font-semibold text-primary">#SYL-409 (Reefer 3.5T)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Kabir Hossain • +88018-XXXX</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Moulvibazar Co-op</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Upazila: Sreemangal Rim</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Sylhet Sadar Hub</div>
+<div class="font-body-sm text-body-sm text-error font-semibold">Emergency Stockout Bay 2</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">1.4 MT</div>
+<div class="font-body-sm text-body-sm text-primary font-medium">Deshi Tomatoes (Crates)</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[15px]">ac_unit</span>
+                  8.8°C (Normal)
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  ETA: 07:15 AM
+                </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Docking Bay 2 • Speeding Clearance</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed font-label-sm text-label-sm text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]">scale</span>
+                  Pending QA Scale
+                </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors">
+<td class="py-3.5 px-4 font-label-md text-label-md text-on-surface">
+<div class="font-semibold text-primary">#CTG-118 (5-Ton Reefer)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Delwar S. • +88019-XXXX</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Jessore Transit Aroth</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Upazila: Jhikargacha Hub</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Chattogram Mandi</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Agrabad Platform #4</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-semibold text-on-surface">2.6 MT</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Winter Gourd &amp; Begun</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-tertiary-container text-on-tertiary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[15px]">device_thermostat</span>
+                  9.1°C (Caution)
+                </span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 font-label-md text-label-md font-semibold text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+                  ETA: 08:45 AM
+                </div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Comilla Bypass • Slow Traffic</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+                  In Transit Stage
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Two-Column Operations Intelligence: Wastage vs Critical Alerts -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Wastage & Quality Rejection Analysis (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-title-lg text-title-lg text-on-surface">Quality Inbound Rejection &amp; Transit Losses</h3>
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-secondary-container text-on-secondary-container font-bold">SLA Target &lt; 3.0%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Visual audit records from Upazila farm collection bays and cold truck handovers</p>
+</div>
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary">1.8%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Avg Rejection Today</p>
+</div>
+</div>
+<!-- District Breakdown Bars -->
+<div class="space-y-space-sm pt-space-sm">
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface font-semibold">Bogura Mandi Hub (Potato &amp; Cabbage)</span>
+<span class="text-secondary font-bold">0.8% rejection</span>
+</div>
+<div class="w-full h-2 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 26%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface font-semibold">Moulvibazar Upazila Co-op (Tomato &amp; Leafy Greens)</span>
+<span class="text-primary font-bold">1.2% rejection</span>
+</div>
+<div class="w-full h-2 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 40%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface font-semibold">Santhia / Pabna Cluster (Cauliflower &amp; Eggplant)</span>
+<span class="text-tertiary font-bold">2.9% rejection (Marginal)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-low rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 78%"></div>
+</div>
+</div>
+</div>
+<!-- Produce Damage Image & Log Spotlight -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center gap-space-md">
+<div class="w-full sm:w-32 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up high resolution photo of freshly harvested Bangladeshi green tomatoes inside a ventilated agricultural crate showing minor transit friction marks on a sorting scale in a clean rural cold warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvu4322wDrbj4P5b_pOL6LnW_g2hcR7t06JtI1YMkUV4cM7XuB_7-kg4H_O9Pe8136WPKVo2jjulWvMyOr0qQKbaIwpszcFeOjsRY0EaHGoajj_INsYrW-Mmf4fwoIMcqtxk8b0AyBSmR9GbFZhLZLzllySedMNHqXUSjKlhwMSG9tArGooSg9Njm0eF_7zg7q5OgnzUa5Q33gdQyqtwdKCeskcwpP0sLJh01R6l-Tv7jTxHDwLraTWg"/>
+</div>
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Logged Incident #DEC-2401</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 kg transit bruise recorded at Sylhet Bay 2 inspection. Farmer credit guarantee applied automatically via bKash escrow release.</p>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Settled • 06:14 AM</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>AI automated vision sorting calibrated at Shibganj grading dock</span>
+<button class="text-primary font-semibold hover:underline">View Full QA Log</button>
+</div>
+</div>
+<!-- Right Column: Critical System Alerts & Operational Triggers (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-error">notification_important</span>
+<h3 class="font-title-lg text-title-lg text-on-surface">Critical System Alerts</h3>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">3 Actionable</span>
+</div>
+<div class="space-y-3 pt-space-xs">
+<!-- Alert 1 (High Priority Stockout) -->
+<div class="p-3.5 rounded-xl bg-error-container/25 flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-extrabold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+                  High Priority Stockout
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">07:02 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold leading-snug">
+                Sylhet Sadar Tomato Stock Exhausted — Customer orders paused. 240 kg reefer arriving in 25 mins.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-md bg-error text-on-error font-label-sm text-label-sm font-semibold hover:opacity-90 transition-opacity">
+                  Acknowledge &amp; Resume Queue
+                </button>
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                  Details
+                </button>
+</div>
+</div>
+<!-- Alert 2 (Medium Cold-chain drift) -->
+<div class="p-3.5 rounded-xl bg-tertiary-fixed/30 flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">thermostat</span>
+                  Cold-Chain Caution
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:48 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+                Reefer #CTG-118 sensor reading +0.6°C above threshold at Comilla crossing. Compressor duty cycle reset required.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-md bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-semibold hover:opacity-90 transition-opacity">
+                  Reroute / Reset Fleet Signal
+                </button>
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                  Call Driver
+                </button>
+</div>
+</div>
+<!-- Alert 3 (B2B Large Order auto-approval) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">corporate_fare</span>
+                  B2B Institutional PO
+                </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:30 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-snug">
+                Grand Sylhet Hotel requested 500 kg Diamond Potato auto-approval on Net-14 credit term.
+              </p>
+<div class="flex items-center gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors">
+                  Approve Purchase Order
+                </button>
+<button class="px-3 py-1.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors">
+                  Review Credit Line
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Automated rules active for Sylhet &amp; Chattogram mandis</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+</div>
+</div>
+</div>
+<!-- Live Geographic Transit Route Visualization Banner -->
+<div class="relative bg-primary rounded-xl overflow-hidden shadow-md text-on-primary p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="relative z-10 max-w-xl space-y-space-xs">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">explore</span>
+<span>Inter-District Corridor Synchronization</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-primary tracking-tight">Active Bogura-to-Sylhet &amp; Jessore-to-CTG Supply Highway</h3>
+<p class="font-body-md text-body-md text-inverse-on-surface/80">
+          Reefer sensors emit telematics every 180 seconds. In case of road blockage along Jamuna Bridge or Comilla Highway, alternate upazila link paths are calculated in real time.
+        </p>
+<div class="pt-2 flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">8.4°C</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">Mean Fleet Temperature</span>
+</div>
+<div class="h-6 w-px bg-white/20"></div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">100%</span>
+<span class="font-label-sm text-label-sm text-inverse-on-surface/70">Mushak Compliance</span>
+</div>
+</div>
+</div>
+<!-- Quick Interactive Switcher Staging -->
+<div class="relative z-10 w-full lg:w-auto flex flex-col sm:flex-row items-center gap-3">
+<div class="w-full sm:w-64 bg-surface-container-lowest text-on-surface p-space-sm rounded-xl shadow-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pb-1">
+<span>Next Rebalance Window</span>
+<span class="text-secondary font-bold">In 34 mins</span>
+</div>
+<div class="font-title-md text-title-md font-bold text-primary">Dhaka → Sylhet 450 kg</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Surplus potatoes scheduled for Dhaka North release</p>
+<button class="mt-2 w-full py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all">
+            Confirm Automated Transfer
+          </button>
+</div>
+</div>
+<!-- Decorative backdrop shapes -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+</div>
+</div>
+<!-- Interactive script to handle button micro-interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const transferBtn = document.getElementById('btn-transfer');
+      if (transferBtn) {
+        transferBtn.addEventListener('click', () => {
+          transferBtn.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+          const originalText = transferBtn.innerHTML;
+          transferBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Computing Hub Routes...</span>';
+          setTimeout(() => {
+            transferBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Transfers Synced!</span>';
+            setTimeout(() => {
+              transferBtn.innerHTML = originalText;
+              transferBtn.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+            }, 2000);
+          }, 800);
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>

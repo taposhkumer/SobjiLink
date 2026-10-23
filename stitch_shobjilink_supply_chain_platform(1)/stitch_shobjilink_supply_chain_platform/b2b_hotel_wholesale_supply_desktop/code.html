@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface":"#f9f9ff","on-tertiary-container":"#ff9f7a","primary":"#003b1b","surface-variant":"#d8e3fb","on-tertiary-fixed-variant":"#7f2b00","surface-container-high":"#dee8ff","surface-dim":"#cfdaf2","surface-container-highest":"#d8e3fb","on-tertiary":"#ffffff","on-error-container":"#93000a","inverse-surface":"#263143","surface-container-low":"#f0f3ff","on-error":"#ffffff","secondary":"#006e2f","outline-variant":"#c0c9be","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#005321","tertiary-container":"#822c00","surface-bright":"#f9f9ff","surface-container-lowest":"#ffffff","surface-tint":"#2e6a41","secondary-fixed":"#6bff8f","primary-fixed-dim":"#96d5a3","on-primary-fixed":"#00210d","secondary-fixed-dim":"#4ae176","outline":"#717970","inverse-primary":"#96d5a3","secondary-container":"#6bff8f","tertiary-fixed-dim":"#ffb599","on-primary-fixed-variant":"#12512c","primary-fixed":"#b1f2be","on-secondary":"#ffffff","on-background":"#111c2d","on-surface-variant":"#404941","tertiary":"#5d1d00","error-container":"#ffdad6","inverse-on-surface":"#ecf1ff","tertiary-fixed":"#ffdbce","surface-container":"#e7eeff","on-secondary-fixed":"#002109","on-secondary-container":"#007432","on-surface":"#111c2d","primary-container":"#14532d","on-primary-container":"#87c695","on-primary":"#ffffff","background":"#f9f9ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","gutter":"1.25rem","space-lg":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem"},"fontFamily":{"headline-md":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"label-lg":["Inter"],"headline-lg":["Manrope"],"label-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"title-md":["Manrope"],"title-lg":["Manrope"],"headline-xl":["Manrope"],"headline-xl-mobile":["Manrope"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52px","fontWeight":"800"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="h-20 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm cursor-pointer" data-path="home" href="#"><div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Shobji<span class="text-secondary">Link</span></span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><p class="font-label-sm text-label-sm text-on-surface-variant hidden lg:block leading-none">Fresh from the Source. Delivered to Your Door.</p></div></a><div class="relative hidden xl:flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span><div class="flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Supply Hub</span><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span></div><select aria-label="Regional Location Hub" class="bg-transparent font-label-md text-label-md text-on-surface font-semibold focus:outline-none cursor-pointer pr-1"><option value="dhaka-north">Dhaka North (Savar Direct)</option><option value="bogra-mandi">Bogra Regional Mandi Hub</option><option value="sylhet-sadar">Sylhet Sadar Aroths</option><option value="chattogram-hub">Chattogram Logistics Hub</option><option value="jessore-coldstore">Jessore Cold-Storage Hub</option></select></div></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full bg-surface-container-low rounded-lg px-3 py-2"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search institutional lots, crates, maund pricing..." type="text"/><div class="hidden lg:flex items-center px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm uppercase font-mono">/</div></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center bg-surface-container-low rounded-lg p-0.5"><button class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-label-md text-label-md font-semibold text-primary shadow-sm" type="button">EN</button><button class="px-2.5 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">বাংলা</button></div><div class="flex items-center gap-1"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Saved Contract Orders" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">receipt_long</span></button></div><a class="flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-all" data-path="cart-checkout" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>B2B Cart (8 Crates) • ৳14,250</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">domain</span></div></div></div><div class="h-12 flex items-center justify-between border-t border-outline-variant/30"><nav class="flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="home" href="#">Home</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="shop-vegetables" href="#">Shop Vegetables</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-primary-container text-on-primary font-semibold rounded-lg" data-path="wholesale-b2b" href="#">Wholesale &amp; B2B</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="track-order" href="#">Track Order</a></nav><div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1 rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Portal:</span><select aria-label="Select System Role" class="bg-transparent font-label-sm text-label-sm text-primary font-semibold focus:outline-none cursor-pointer"><option selected="" value="commercial-b2b">Commercial Kitchen / B2B Mode</option><option value="customer">Customer Mode</option><option value="supplier">Supplier / Grower</option><option value="branch-qa">Branch QA Inspection</option><option value="delivery">Delivery Fleet</option><option value="admin">Central Admin</option></select></div></div></div></header><main class="w-full pt-32 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Top Spatial Anchor & System Context Indicator -->
+<div class="max-w-[1440px] mx-auto w-full px-margin-desktop py-space-md">
+<!-- 1. Enterprise Header & Verified Buyer Profile Strip -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-sm mb-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6">
+<!-- Account Info -->
+<div class="flex items-start gap-4">
+<div class="w-14 h-14 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]">hotel_class</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Grand Sylhet Hotel &amp; Resort</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                Verified Enterprise Buyer
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Kitchen #B2B-1049
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Main Institutional Culinary Division</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span>Osmani Airport Road, Sylhet</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="text-secondary font-semibold">Tier-1 Priority Inbound</span>
+</p>
+</div>
+</div>
+<!-- Quick Actions Toolbar -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">description</span>
+            Mushak-6.3 VAT Tax Invoice (PDF)
+          </button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync_alt</span>
+            Switch to QA Hub
+          </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+            1-Tap Reorder (450 kg • ৳14,200)
+          </button>
+</div>
+</div>
+<!-- Financial Credit Ledger Bar -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 pt-5 bg-surface-container-low/60 rounded-lg p-4">
+<div class="md:col-span-3 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Credit Line Profile</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Net-14 Active</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">৳150,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Approved Ceiling</span>
+</div>
+</div>
+<div class="md:col-span-6 flex flex-col justify-center">
+<div class="flex justify-between items-center mb-1.5 font-label-md text-label-md">
+<span class="text-on-surface-variant font-medium">Cycle Drawn: <strong class="text-on-surface">৳57,600 (38.4%)</strong></span>
+<span class="text-secondary font-bold">Available Liquidity: ৳92,400</span>
+</div>
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 38.4%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1 text-[11px] font-label-sm text-on-surface-variant">
+<span>Billing Cycle Ends: 30 Nov 2025</span>
+<span>Next Settlement: ৳57,600 on 05 Dec</span>
+</div>
+</div>
+<div class="md:col-span-3 flex items-center justify-end">
+<button class="w-full md:w-auto px-4 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">trending_up</span>
+            Request Line Expansion
+          </button>
+</div>
+</div>
+</section>
+<!-- 2. Standing Kitchen Dispatch & Logistics Feed -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Dispatch Automation Engine -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg font-bold text-on-surface">Standing Kitchen Dispatch Automation</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Autonomous scheduled harvest runs tailored for hotel culinary cycles</p>
+</div>
+</div>
+<!-- Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-3 font-label-md text-label-md font-semibold text-primary">Active Contract</span>
+</label>
+</div>
+<!-- Schedule Metrics & Days Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2 mb-6">
+<div class="p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                ARRIVAL WINDOW
+              </div>
+<p class="font-title-md text-title-md font-bold text-on-surface">06:00 AM - 07:30 AM</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Pre-dawn culinary prep readiness</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">thermostat</span>
+                REEFER COLD-CHAIN
+              </div>
+<p class="font-title-md text-title-md font-bold text-on-surface">&lt; 8.5°C Guaranteed</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">IoT real-time sensor logging</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[16px]">storefront</span>
+                PRIMARY SOURCING
+              </div>
+<p class="font-title-md text-title-md font-bold text-on-surface">Bogra &amp; Sylhet Aroth</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Direct Mandi farm lots</p>
+</div>
+</div>
+<!-- Days Selection Bar -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Scheduled Weekly Deliveries:</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(3 Cycles / Week)</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm" type="button">Mon</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container" type="button">Tue</button>
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm" type="button">Wed</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container" type="button">Thu</button>
+<button class="w-10 h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm" type="button">Fri</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container" type="button">Sat</button>
+<button class="w-10 h-10 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container" type="button">Sun</button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-4 mt-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+            Zero wastage warranty: QA replacements honored within 2 hours of pre-dawn unloading.
+          </span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline" type="button">
+            Configure Standing Items Manifest →
+          </button>
+</div>
+</div>
+<!-- Live Logistics Telemetry Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">In-Transit Reefer Unit #DH-782</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">On Schedule</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+            Loaded from Bogura Cold Hub at 01:15 AM. Traversal via Jamuna Link to Grand Sylhet Logistics Dock.
+          </p>
+<!-- Telemetry Specs -->
+<div class="space-y-3 mb-5">
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">ac_unit</span>
+<span class="font-label-md text-label-md text-on-surface">Cargo Temp</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-secondary">7.2°C (Optimal)</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">weight</span>
+<span class="font-label-md text-label-md text-on-surface">Payload Capacity</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">3.8 Tons (82% full)</span>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+<span class="font-label-md text-label-md text-on-surface">ETA Kitchen Dock</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">06:20 AM Tomorrow</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">satellite_alt</span>
+          Open Live Route &amp; Seal Telemetry
+        </button>
+</div>
+</section>
+<!-- 3. Wholesale Bulk Catalog with Tiered Volume Pricing -->
+<section class="mb-space-xl">
+<!-- Section Header & Filter Strip -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Wholesale Sacks &amp; Truckloads</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Updated 24m ago</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Direct-from-Aroth Commercial Produce Catalog</h2>
+</div>
+<!-- Filter Pill Segment -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold shrink-0 shadow-sm" type="button">All Bulk Lots</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">Root Tubers &amp; Maund</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">Aromatics &amp; Alliums</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">Gourds &amp; Solanaceous</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-md text-label-md font-medium shrink-0 shadow-sm transition-colors" type="button">Export Seasonals</button>
+</div>
+</div>
+<!-- 6-Product Responsive Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Bogura Diamond Potatoes -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up commercial photography of freshly harvested Bogura Diamond potatoes packed in coarse natural jute burlap sacks inside an agricultural warehouse with crisp soft morning sunlight showing natural soil dusting and premium uniform grade tubers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiRqO7gcjlRbmSCm9usvQ69oKsCqqQBcHSUAiJz1DsHGJ_zoGQMpIQix6BHETQ3vu_OOKjrN6VgeqpncdKND3DSPPg19cO815lEKtUZJreSB_DUtFn3DTFiDOXkJOXAuSgOsWIauCjgh9LXSPHgclb6ThfUMAujRrbmQv9k4LB211dysReuNKZKWCghzW29u1bLxf23j6WPxHzbKsnwbLphNCUUx2oCrLYwLMNXYWbZoqe-6Gy5HekDg"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Bogura • Shibganj Hub
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/95 backdrop-blur font-label-sm text-label-sm font-bold text-on-secondary-fixed shadow-sm">
+                  Grade A+ Export Spec
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Bogura Diamond Potatoes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Low sugar starch content, optimal for French fries &amp; curries</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳24<span class="font-label-sm text-label-sm text-on-surface-variant">/kg min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>50 - 199 kg (Standard Maund)</span>
+<span class="font-semibold text-on-surface">৳30.00 / kg</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>200 - 499 kg (Mid-volume 10%)</span>
+<span class="font-semibold text-on-surface">৳27.00 / kg</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>500+ kg Bulk Lot (Best Rate)</span>
+<span>৳24.00 / kg</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">50 kg Sack</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">100 kg Lot</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">250 kg Pallet</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">500 kg Truck</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (250 kg @ ৳27):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳6,750</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+<!-- Card 2: Panchagarh Fresh Vine Tomatoes -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Commercial grading shot of deep red Panchagarh vine-ripened tomatoes stacked neatly in plastic ventilated agricultural harvest crates in a clean packhouse with natural high-contrast illumination highlighting firm skins and high brix pulp." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsWUJedbAqt-pvnNV-J79kJ5d-4XHAEH7Z64J7MDkPvxTaciqzvdMFpyRqzvnxp6NPwIIfQBjrdTeGYwXVt99sT6OWBp36J-DAdW7uczc1-kjnf7JLFrlZhlB7X9pKIlrVAvMYJMTr4rvR5caHktkOF1wJqCcsaXke1LB1cjxZdnun5TkkRI-uLM_oqPDi4fl1HD3Y8aK6YzCvtYwaH-L4Nv3ikLct7VyjdNBmzKSwu4bgBmX4TahqHA"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Panchagarh • Debiganj
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/95 backdrop-blur font-label-sm text-label-sm font-bold text-on-secondary-fixed shadow-sm">
+                  Grade A Firm Pulp
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Panchagarh Vine Tomatoes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Thick pericarp, 7-day hotel shelf-life, hand-culled</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳33<span class="font-label-sm text-label-sm text-on-surface-variant">/kg min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>25 - 99 kg (Catering Crate)</span>
+<span class="font-semibold text-on-surface">৳42.00 / kg</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>100 - 249 kg (Banquet Pack)</span>
+<span class="font-semibold text-on-surface">৳37.00 / kg</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>250+ kg Commercial Direct</span>
+<span>৳33.00 / kg</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">25 kg Crate</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">100 kg Lot</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">250 kg Crate</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">500 kg Load</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (100 kg @ ৳37):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳3,700</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+<!-- Card 3: Sreemangal Deshi Gol Begun -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High quality studio-lit farm harvest photo of deep purple round Deshi Gol Begun eggplants with vibrant green calyx stems arranged in traditional woven bamboo baskets ready for wholesale distribution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpOoh7Co-5WroagIK1BpMxpHAXusdxowBUH-9wvw2oSw1xAGg1b6F6AIaalg5f2sd17cXLqf7CCGtSoINEUOegyUuf0ZZ9vl1oUDu8x5O4XGW1iMxleXrupxxXGyJJ_U4y9m5jNDNwKyuK4MZyWRl-nhYtnaZYokwi1q78DkG1DjvnIA6Iu5GsUpr2HlxZsKwhWR6NFDG1HHUL0VFFwWQd73gfW4eSjIjdV6wTMYU_lvPQWg3jRCsY1g"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Sreemangal Hub
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-on-surface shadow-sm">
+                  Grade A Native
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Sreemangal Deshi Begun</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Uniform glossy purple, seed-light core for fry dishes</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳38<span class="font-label-sm text-label-sm text-on-surface-variant">/kg min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>40 kg Sack (Standard)</span>
+<span class="font-semibold text-on-surface">৳48.00 / kg</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>120 kg Mid-Lot (3 Sacks)</span>
+<span class="font-semibold text-on-surface">৳42.00 / kg</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>300+ kg Direct Farm Load</span>
+<span>৳38.00 / kg</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">40 kg Sack</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">80 kg (2x)</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">120 kg Lot</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">300 kg Bulk</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (40 kg @ ৳48):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳1,920</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+<!-- Card 4: Bogura Fresh Green Chillies -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant sharp green fresh raw Bangladeshi green chillies kacha morich overflowing from clean breathable net sacks on wooden wholesale staging platforms, bright crisp daylight rendering freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUzpFMcbgylOIof110QEwHxK6NwVB9qW5LqseFywFIBlTv3iDX-Uo0JXQtnMVvpy9QkTlOoIBvovHMQgLuqt6RhbfGSPEpiK50oIzEhSlF75rLfHTKIDrc86Sub0xXqZdwc6RcVYSaQcBK2e-NQKRLh-iavQR8M5SIL_IYbD1aNX41JCRdFmkwsazwvjPLPf5h3k4iFbBPIjGFKszbBOAu8JRM_5DPLtz56yQXAGcrm_b18nI93PWeLQ"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Bogura Mandi
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/95 backdrop-blur font-label-sm text-label-sm font-bold text-on-secondary-fixed shadow-sm">
+                  High Pungency Grade A
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Bogura Kacha Morich</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sorted, calyx intact, minimal moisture pack for restaurants</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳65<span class="font-label-sm text-label-sm text-on-surface-variant">/kg min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>20 kg (2 Sacks)</span>
+<span class="font-semibold text-on-surface">৳80.00 / kg</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>50 kg Catering Crate</span>
+<span class="font-semibold text-on-surface">৳72.00 / kg</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>100+ kg Institutional Hub</span>
+<span>৳65.00 / kg</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">10 kg Net</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">20 kg Lot</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">50 kg Crate</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">100 kg Bulk</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (50 kg @ ৳72):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳3,600</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+<!-- Card 5: Pabna Deshi Red Onions -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Wholesale storehouse setting with rich dry red Pabna Deshi Murikata onions in woven red mesh sacks, showing tight dry outer peels and uniform medium caliber bulbs in ambient warehouse lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAoLB2laLdIKtKYFs7oQUwJyVjHfAP7lHxcguKy8FghmM3e0fpel_08a-hhVebTe1mYcbn8v446AetSNlhnG8ajdkrl8Tg-bmul0KQTtTa0qTVFzDVwvKBY2zLbZbsNQSRDKmVAAPcJzGgyWONvpa8UkUTiqBM-fYdM00XNW77WkFbN2KPzHuQfrlxTayh0g19SRg9HmXB5FIXv3_TywNG_tm5vzMD3xqGqf1OUilFSEmqWxA71HeQxw"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Pabna • Santhia Aroth
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm font-bold text-on-surface shadow-sm">
+                  Murikata Variety
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Pabna Deshi Red Onions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High dry-matter ratio, pungent aroma, zero sprouting</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳70<span class="font-label-sm text-label-sm text-on-surface-variant">/kg min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>40 - 119 kg (1-2 Jute Sacks)</span>
+<span class="font-semibold text-on-surface">৳78.00 / kg</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>120 - 199 kg (3-4 Jute Sacks)</span>
+<span class="font-semibold text-on-surface">৳74.00 / kg</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>200+ kg Bulk Lot</span>
+<span>৳70.00 / kg</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">40 kg Sack</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">80 kg (2x)</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">120 kg Lot</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">240 kg Pallet</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (120 kg @ ৳74):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳8,880</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+<!-- Card 6: Narsingdi Long Green Lau -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col justify-between">
+<div>
+<div class="relative w-full h-48 rounded-lg overflow-hidden mb-4 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Pristine fresh long pale green bottle gourds Lau stacked neatly with soft cushioning foliage in ventilated commercial logistics transport crates on a farm loading apron." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMEi_Pxsuz-Y5tdq4r7wJyQTp1G-4IZ-hcdlqZN-vi1K0ZxhbL20NdGULQLtG5pKBKk2FaMD51YYPFTdwLYBwkD8RM1LflLlwTmG9bi_95-gg8xhiV2tdoD90v8wSgayocfPXILZtR1Wuroxz-GwHxf6HqMJqaO0bo5dANiNfzOSTUVTWOhf7JuBEUwxRmpTTHpL5hQH2K6oHY4Swl5uRimFU2srd1ndyB--QEDXZ0qom8LFQXTS1wdA"/>
+<div class="absolute top-3 left-3 flex gap-2">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/95 backdrop-blur font-label-sm text-label-sm font-bold text-primary shadow-sm">
+                  Narsingdi Valley
+                </span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed/95 backdrop-blur font-label-sm text-label-sm font-bold text-on-secondary-fixed shadow-sm">
+                  Tender Core 1.8-2.2kg/pc
+                </span>
+</div>
+</div>
+<div class="flex items-start justify-between gap-2 mb-2">
+<div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Narsingdi Long Lau</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Straight form, tender pulp, ideal for banquet broth bases</p>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳28<span class="font-label-sm text-label-sm text-on-surface-variant">/pc min</span></span>
+</div>
+</div>
+<!-- Tiered Volume Pricing Table -->
+<div class="bg-surface-container-low rounded-lg p-3 my-3">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold block mb-2">Institutional Volume Tiers</span>
+<div class="space-y-1.5 font-label-sm text-label-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>30 - 59 pcs (Single Crate)</span>
+<span class="font-semibold text-on-surface">৳35.00 / pc</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>60 - 99 pcs (2 Crate Batch)</span>
+<span class="font-semibold text-on-surface">৳32.00 / pc</span>
+</div>
+<div class="flex justify-between items-center font-bold text-primary bg-primary-fixed/40 px-2 py-0.5 rounded">
+<span>100+ pcs Catering Trucklot</span>
+<span>৳28.00 / pc</span>
+</div>
+</div>
+</div>
+<!-- Fast Weight Units Selector -->
+<div class="grid grid-cols-4 gap-1.5 mb-4">
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">30 pcs</button>
+<button class="py-1.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-sm" type="button">60 pcs (2x)</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">90 pcs</button>
+<button class="py-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold hover:bg-surface-container-high transition-colors" type="button">150 pcs Lot</button>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="pt-3">
+<div class="flex items-center justify-between mb-3 font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Selected Subtotal (60 pcs @ ৳32):</span>
+<span class="font-bold text-primary font-title-md text-title-md">৳1,920</span>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+              Add to Wholesale Manifest
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Custom Institutional RFQ / Banquet Procurement Banner -->
+<section class="relative bg-primary-container text-on-primary rounded-xl p-8 mb-space-xl overflow-hidden shadow-lg">
+<div class="absolute -right-12 -bottom-12 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold mb-4 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">handshake</span>
+            Direct Farm-Gate Price Lock Guarantee (7 - 14 Days)
+          </div>
+<h2 class="font-headline-lg text-headline-lg font-bold tracking-tight text-white mb-2">
+            Procuring &gt; 2,000 kg for Banquets, Catering, or Hospital Networks?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary/90 mb-4">
+            Bypass spot auction volatility. Lock seasonal contracts directly with regional Upazila clusters, backed by Department of Agricultural Extension (DAE) certified purity checks and dedicated multi-drop reefer logistics.
+          </p>
+<div class="flex flex-wrap items-center gap-6 text-on-primary/80 font-label-md text-label-md">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span> Fixed Maund Billing</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span> Mushak-6.3 Integrated</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span> Multi-point Commercial Unloading</span>
+</div>
+</div>
+<div class="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3">
+<button class="px-6 py-3.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-lg text-label-lg font-bold hover:bg-secondary-fixed-dim transition-all shadow-md flex items-center justify-center gap-2 text-center" type="button">
+<span class="material-symbols-outlined text-[20px]">request_quote</span>
+            Request Custom Institutional Quotation
+          </button>
+<button class="px-6 py-3.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-label-md text-label-md font-semibold transition-all backdrop-blur text-center" type="button">
+            Contact B2B Key Account Manager
+          </button>
+</div>
+</div>
+</section>
+<!-- 5. Commercial Kitchen Analytics & Monthly Spend Ledger -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-8">
+<!-- Left: Category Breakdown Chart Widget -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Monthly Spend Allocation</span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Kitchen Volume Distribution</h3>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">৳57,600</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+            Current billing cycle volume across Grand Sylhet main prep stations.
+          </p>
+<!-- SVG Donut Chart + Visual Legend -->
+<div class="flex items-center gap-6 mb-6">
+<div class="relative w-36 h-36 shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<!-- Tubers (45%) -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="45, 100" stroke-width="3.8"></path>
+<!-- Gourds & Solanaceous (33%) -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="33, 100" stroke-dashoffset="-45" stroke-width="3.8"></path>
+<!-- Leafy & Alliums (22%) -->
+<path class="text-secondary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="22, 100" stroke-dashoffset="-78" stroke-width="3.8"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">1,840</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">kg Delivered</span>
+</div>
+</div>
+<!-- Legends -->
+<div class="space-y-3 flex-1 font-label-md text-label-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary shrink-0"></span>
+<span class="text-on-surface font-medium">Root Tubers &amp; Potatoes</span>
+</div>
+<div class="text-right">
+<span class="font-bold text-on-surface">45%</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">৳25,920</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary shrink-0"></span>
+<span class="text-on-surface font-medium">Gourds &amp; Solanaceous</span>
+</div>
+<div class="text-right">
+<span class="font-bold text-on-surface">33%</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">৳19,008</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim shrink-0"></span>
+<span class="text-on-surface font-medium">Aromatics &amp; Essentials</span>
+</div>
+<div class="text-right">
+<span class="font-bold text-on-surface">22%</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">৳12,672</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low rounded-lg flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Estimated Savings vs. Karwan Bazar Spot Rate:</span>
+<span class="font-bold text-secondary">৳8,450 (14.6% Saved)</span>
+</div>
+</div>
+<!-- Right: Past Wholesale Invoices Ledger -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Billing Records</span>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Recent B2B Commercial Invoices</h3>
+</div>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline" type="button">
+              View All 24 Statements →
+            </button>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-label-md text-label-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-bold">
+<th class="py-2.5 px-3 rounded-l-lg">Invoice / Order #</th>
+<th class="py-2.5 px-3">Date Dispatched</th>
+<th class="py-2.5 px-3">Gross Weight</th>
+<th class="py-2.5 px-3">B2B Amount</th>
+<th class="py-2.5 px-3">Status</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Row 1 -->
+<tr>
+<td class="py-3 px-3">
+<span class="font-bold text-on-surface block">INV-2025-0891</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PO #GSHR-NOV-04</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">24 Nov 2025</td>
+<td class="py-3 px-3 font-semibold text-on-surface">450 kg</td>
+<td class="py-3 px-3 font-bold text-on-surface">৳14,200</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                      Paid
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                      Reorder
+                    </button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr>
+<td class="py-3 px-3">
+<span class="font-bold text-on-surface block">INV-2025-0842</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PO #GSHR-NOV-03</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">21 Nov 2025</td>
+<td class="py-3 px-3 font-semibold text-on-surface">620 kg</td>
+<td class="py-3 px-3 font-bold text-on-surface">৳19,800</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+                      Net-14 Due
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                      Reorder
+                    </button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr>
+<td class="py-3 px-3">
+<span class="font-bold text-on-surface block">INV-2025-0799</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PO #GSHR-NOV-02</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant">17 Nov 2025</td>
+<td class="py-3 px-3 font-semibold text-on-surface">770 kg</td>
+<td class="py-3 px-3 font-bold text-on-surface">৳23,600</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">
+                      Under Inspection
+                    </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm font-bold transition-colors" type="button">
+                      Reorder
+                    </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Ledger Footer Summary -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+            Automated e-invoice copies delivered directly to accounts@grandsylhet.com
+          </span>
+<button class="flex items-center gap-1 text-primary font-label-sm text-label-sm font-bold hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+            Export CSV for SAP / Tally
+          </button>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-low pt-12 pb-8 mt-12"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10"><div class="md:col-span-1"><div class="flex items-center gap-2 mb-3"><div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">eco</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">ShobjiLink</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Digitizing Bangladesh's agricultural supply chain directly from regional aroths to commercial kitchens, hotels, and institutional caterers.</p><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Government Certified Agritech</span></div></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Commercial Bulk Lots</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Hotel &amp; Resort Daily Crates</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Catering Bulks &amp; Root Sacks</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Aroth Contract Futures</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Quality Tested Grade A Batches</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Logistics &amp; Hubs</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Cold Chain Telemetry</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Bogra Regional Mandi Hub</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Jessore Transit Station</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Upazila Collection Centers</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">B2B Commercial Support</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><p class="font-label-md text-label-md text-on-surface font-medium">Dhaka Central Institutional Desk</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">+880 1700-000000</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">b2b@shobjilink.com.bd</p></li><li class="pt-2"><span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Commercial Dispatch: 03:30 AM - 10:00 PM</span></li></ul></div></div><div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 ShobjiLink Smart Agriculture Logistics. All rights reserved.</p><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Fair Price Charter</a><a class="hover:text-on-surface transition-colors" data-path="wholesale-b2b" href="#">B2B Credit &amp; Invoicing</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">QA Standards</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Privacy Policy</a></div></div></div></footer></body></html>

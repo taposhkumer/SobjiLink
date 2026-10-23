@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"error":"#ba1a1a","surface":"#f9f9ff","on-tertiary-container":"#ff9f7a","primary":"#003b1b","surface-variant":"#d8e3fb","on-tertiary-fixed-variant":"#7f2b00","surface-container-high":"#dee8ff","surface-dim":"#cfdaf2","surface-container-highest":"#d8e3fb","on-tertiary":"#ffffff","on-error-container":"#93000a","inverse-surface":"#263143","surface-container-low":"#f0f3ff","on-error":"#ffffff","secondary":"#006e2f","outline-variant":"#c0c9be","on-tertiary-fixed":"#370e00","on-secondary-fixed-variant":"#005321","tertiary-container":"#822c00","surface-bright":"#f9f9ff","surface-container-lowest":"#ffffff","surface-tint":"#2e6a41","secondary-fixed":"#6bff8f","primary-fixed-dim":"#96d5a3","on-primary-fixed":"#00210d","secondary-fixed-dim":"#4ae176","outline":"#717970","inverse-primary":"#96d5a3","secondary-container":"#6bff8f","tertiary-fixed-dim":"#ffb599","on-primary-fixed-variant":"#12512c","primary-fixed":"#b1f2be","on-secondary":"#ffffff","on-background":"#111c2d","on-surface-variant":"#404941","tertiary":"#5d1d00","error-container":"#ffdad6","inverse-on-surface":"#ecf1ff","tertiary-fixed":"#ffdbce","surface-container":"#e7eeff","on-secondary-fixed":"#002109","on-secondary-container":"#007432","on-surface":"#111c2d","primary-container":"#14532d","on-primary-container":"#87c695","on-primary":"#ffffff","background":"#f9f9ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","gutter":"1.25rem","space-lg":"1.5rem","margin-desktop":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2.5rem","margin":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem"},"fontFamily":{"headline-md":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-sm":["Manrope"],"label-lg":["Inter"],"headline-lg":["Manrope"],"label-md":["Inter"],"body-md":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"title-md":["Manrope"],"title-lg":["Manrope"],"headline-xl":["Manrope"],"headline-xl-mobile":["Manrope"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-xl":["44px",{"lineHeight":"52px","fontWeight":"800"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","fontWeight":"800"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="h-20 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">eco</span></div><div><div class="flex items-center gap-1"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">Shobji<span class="text-secondary">Link</span></span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><p class="font-label-sm text-label-sm text-on-surface-variant hidden lg:block leading-none">Fresh from the Source. Delivered to Your Door.</p></div></div><div class="relative hidden xl:flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 gap-2"><span class="material-symbols-outlined text-secondary text-[18px]">pin_drop</span><div class="flex flex-col text-left"><div class="flex items-center gap-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Supply Hub</span><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span></div><select aria-label="Regional Location Hub" class="bg-transparent font-label-md text-label-md text-on-surface font-semibold focus:outline-none cursor-pointer pr-1"><option value="dhaka-north">Dhaka North (Savar Direct)</option><option value="sylhet-sadar">Sylhet Sadar Aroths</option><option value="chattogram-hub">Chattogram Logistics Hub</option></select></div></div></div><div class="flex-1 max-w-md hidden md:block"><div class="relative flex items-center w-full bg-surface-container-low rounded-lg px-3 py-2"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search fresh vegetables, upazila lots..." type="text"/><div class="hidden lg:flex items-center px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-label-sm uppercase font-mono">/</div></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center bg-surface-container-low rounded-lg p-0.5"><button class="px-2.5 py-1 rounded-md bg-surface-container-lowest font-label-md text-label-md font-semibold text-primary shadow-sm" type="button">EN</button><button class="px-2.5 py-1 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface" type="button">বাংলা</button></div><div class="flex items-center gap-1"><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button aria-label="Wishlist" class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">favorite</span></button></div><a class="flex items-center gap-2 bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md px-4 py-2 rounded-full transition-all" data-path="cart-checkout" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Cart (3) • ৳160</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-12 flex items-center justify-between border-t border-outline-variant/30"><nav class="flex items-center gap-2" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-lg"><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="home" href="#">Home</a><a aria-current="page" class="px-3 py-1.5 transition-colors bg-primary-container text-on-primary font-semibold rounded-lg" data-path="shop-vegetables" href="#">Shop Vegetables</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="wholesale-b2b" href="#">Wholesale &amp; B2B</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="track-order" href="#">Track Order</a></nav><div class="flex items-center gap-2 bg-surface-container-low px-2.5 py-1 rounded-lg"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Portal:</span><select aria-label="Select System Role" class="bg-transparent font-label-sm text-label-sm text-primary font-semibold focus:outline-none cursor-pointer"><option value="customer">Customer Mode</option><option value="supplier">Supplier / Grower</option><option value="branch-qa">Branch QA Inspection</option><option value="delivery">Delivery Fleet</option><option value="admin">Central Admin</option></select></div></div></div></header><main class="w-full pt-32 bg-surface min-h-[calc(100vh-280px)]"><div class="flex flex-col w-full">
+<!-- Top Bar / Breadcrumb / Regional Route Telemetry Bar -->
+<section class="w-full bg-surface-container-lowest shadow-sm py-4 mb-6">
+<div class="max-w-[1440px] mx-auto px-margin-desktop flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+<div class="flex items-center gap-3">
+<nav class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" data-path="home" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary">Fresh Vegetables Catalog</span>
+</nav>
+<span class="w-1 h-4 bg-outline-variant rounded-full hidden sm:inline-block"></span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">
+          LIVE INVENTORY FEED
+        </span>
+</div>
+<!-- Real-Time Delivery Location Strip -->
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-xl">
+<div class="flex items-center gap-2">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Delivering to:</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span class="font-semibold">Sylhet Sadar</span>
+<span class="text-on-surface-variant hidden xl:inline">(Zindabazar, Amberkhana, Subidbazar)</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded-lg text-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span>ETA: 35-45 mins</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workspace Layout: 12-Column Desktop Grid -->
+<div class="max-w-[1440px] mx-auto px-margin-desktop w-full mb-16">
+<div class="grid grid-cols-12 gap-gutter-desktop items-start">
+<!-- LEFT SIDEBAR FILTERS (Column 1-3, Width 280-320px equivalent) -->
+<aside class="col-span-12 lg:col-span-3 flex flex-col gap-6 sticky top-28">
+<!-- Regional Supply Hub Picker -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary font-bold">Regional Hub</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-semibold">Cold Chain</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Active Hub: Sylhet -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low cursor-pointer transition-all hover:bg-surface-container">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 accent-primary cursor-pointer" name="regional-hub" type="radio" value="sylhet"/>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Sylhet Sadar Aroths</p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Active Transit (3.2 km)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-bold">24 lots</span>
+</label>
+<!-- Chattogram Hub -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest cursor-pointer transition-all hover:bg-surface-container-low">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 accent-primary cursor-pointer" name="regional-hub" type="radio" value="chattogram"/>
+<div>
+<p class="font-label-md text-label-md font-medium text-on-surface">Chattogram Mandi</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Inter-District (+3 hrs)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">48 lots</span>
+</label>
+<!-- Dhaka North Hub -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest cursor-pointer transition-all hover:bg-surface-container-low">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 accent-primary cursor-pointer" name="regional-hub" type="radio" value="dhaka"/>
+<div>
+<p class="font-label-md text-label-md font-medium text-on-surface">Dhaka Savar Transit</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Central Reserve (+5 hrs)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">62 lots</span>
+</label>
+</div>
+</div>
+<!-- Filter Criteria Panel -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Crop Taxonomy</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" type="button">Reset</button>
+</div>
+<!-- Category Checkboxes -->
+<div class="flex flex-col gap-2.5">
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input checked="" class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md font-semibold text-primary group-hover:text-secondary transition-colors">All Fresh Vegetables</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-primary bg-primary-fixed px-2 py-0.5 rounded-full">24</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Root Tubers &amp; Alu</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-low px-2 py-0.5 rounded">6</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Gourds &amp; Eggplants</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-low px-2 py-0.5 rounded">5</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Leafy Shak &amp; Greens</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-low px-2 py-0.5 rounded">8</span>
+</label>
+<label class="flex items-center justify-between cursor-pointer group">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface-variant group-hover:text-primary transition-colors">Aromatics &amp; Chillies</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline bg-surface-container-low px-2 py-0.5 rounded">5</span>
+</label>
+</div>
+<!-- Quality Grading Standard -->
+<div class="flex flex-col gap-3 pt-3 bg-surface-container-low -mx-5 px-5 py-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Quality Grading</span>
+<span class="material-symbols-outlined text-outline text-[18px]">verified</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Grade A+</span>
+<span class="font-body-sm text-body-sm text-on-surface">Export &amp; Hotel Select</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Grade A</span>
+<span class="font-body-sm text-body-sm text-on-surface">Standard Fresh Daily</span>
+</div>
+</label>
+<label class="flex items-center gap-2.5 cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" type="checkbox"/>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">Grade B</span>
+<span class="font-body-sm text-body-sm text-on-surface">Commercial Kitchens</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Price Range Slider -->
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Price Ceiling</span>
+<span class="font-label-md text-label-md font-bold text-primary">৳20 - ৳150 / kg</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container rounded-lg cursor-pointer" max="150" min="20" type="range" value="120"/>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>৳20 min</span>
+<span>৳85 avg</span>
+<span>৳150 max</span>
+</div>
+</div>
+<!-- Toggles & Certifications -->
+<div class="flex flex-col gap-3 pt-2">
+<!-- Hide Out of Stock Toggle -->
+<label class="flex items-center justify-between cursor-pointer">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hide Out-of-Stock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Show Sylhet on-hand only</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="stock-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</div>
+</label>
+<!-- Agro Cluster Certified Checkbox -->
+<label class="flex items-start gap-2.5 p-3 rounded-lg bg-surface-container-low cursor-pointer mt-2">
+<input checked="" class="w-4 h-4 mt-0.5 rounded accent-primary cursor-pointer" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1">
+                  Agro-Cluster Certified
+                  <span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mt-0.5">Pesticide monitored via Upazila testing labs</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Telemetry Widget: Transit Temp -->
+<div class="bg-primary text-on-primary p-4 rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">ac_unit</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-primary-container font-semibold uppercase">Cold-Chain Temp</p>
+<p class="font-title-md text-title-md font-bold">5.8°C Steady</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary px-2.5 py-1 rounded-full font-bold">Optimal</span>
+</div>
+</aside>
+<!-- RIGHT MAIN CONTENT: Grid & Catalog (Column 4-12) -->
+<main class="col-span-12 lg:col-span-9 flex flex-col gap-6">
+<!-- Top Search, Sorting, and Active Tag Row -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-3">
+<div class="flex flex-col md:flex-row items-center justify-between gap-3">
+<!-- Upazila/Lot Search Bar -->
+<div class="relative w-full md:max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-low rounded-lg pl-10 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Search by crop, upazila, lot number (e.g., Bogura Diamond, Lot #440)..." type="text"/>
+</div>
+<!-- Sorting Dropdown -->
+<div class="flex items-center gap-3 w-full md:w-auto justify-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider whitespace-nowrap">Sort By:</span>
+<div class="relative">
+<select class="bg-surface-container-low font-label-md text-label-md text-on-surface font-semibold px-3 py-2 rounded-lg cursor-pointer focus:outline-none appearance-none pr-8">
+<option value="harvest">Freshness: Harvest Time (Earliest)</option>
+<option value="price-asc">Price: Low to High</option>
+<option value="price-desc">Price: High to Low</option>
+<option value="popularity">Demand &amp; Fast Turnover</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Active Filter Pills & Summary -->
+<div class="flex items-center flex-wrap gap-2 pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active:</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+              Hub: Sylhet Sadar
+              <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+              Grade A+ &amp; Grade A
+              <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">
+              Agro-Certified
+              <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold ml-auto cursor-pointer hover:underline">
+              Showing 6 of 24 lots
+            </span>
+</div>
+</div>
+<!-- PRODUCT CARDS GRID (3 Columns on Large Desktops) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- PRODUCT CARD 1: Bogura Diamond Alu -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Close up of fresh unwashed Bogura Diamond potatoes with light golden skin, packed in breathable mesh crates under soft morning daylight, displaying soil freshness and crisp natural texture in Bangladesh agritech cold hub." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UYB0PvyUOdQUdoDTIPf75688DbD6LywBHh5k7w2nDdIlcNJ0HWPfzGwjcyXoDVLU2uJQsYkxtgymX1RbqK5kMo-QE24L-t2JLmmHMNW-1sFcr3RIpV0258oJ5x4quB_t01_h218lR6x2EHjqtoZ8RLMlVhhx5Ng57gvsJTRS1B3a4ikvH-IHJqJSeMAOBZp_GwRtmL9rQII3oFDscqcXjfj0P-jndkbkWFA08S_2uPBCMNbC89J0Wg"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                  In Stock: 200 kg
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                  Sylhet Hub Active
+                </span>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                Grade A
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    Bogura Cold Chain Direct
+                  </span>
+<span class="font-mono">Lot #BG-884</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-primary">Bogura Diamond Alu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                  High starch, firm texture. Clean sorted batches from Shibganj Upazila cold warehouse. Ideal for daily cooking &amp; fries.
+                </p>
+</div>
+<!-- Price & Ordering Stepper -->
+<div class="pt-3 flex flex-col gap-3 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">৳35</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">MOQ: 1 kg</span>
+</div>
+<div class="flex items-center gap-2">
+<!-- Stepper Counter -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-10 text-center font-label-md text-label-md font-bold text-on-surface">1 kg</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Add To Cart -->
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-2 px-3 rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add to Cart
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 2: Gol Begun / Purple Eggplant -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Glossy deep violet round eggplants (Gol Begun) with fresh emerald green calyx, resting on clean bamboo trays in an agricultural distribution centre in Bangladesh, soft diffused indoor daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2jGpGhDqJFYEn1FpoNOXDCIqvpsLtzdPKHfUuxz9SbZ-vNwLOYoxNRUmmORqbhHZ5YafpbrH0orUrgpE94yJ0QPg9oR7Ehkpr5iUI416Sz5WZ1p-CeUrho8YcdaBh_8ndEVhKTiKHru3Y5yAEg4iY4FUuBRBMMBGNAus8Aoqdr1xxmchfS3l_R8v6R__UoBI5K61H2GexDDn_FElJ4NH7j4pqi6JdNiT9s6gsL0fV7LOqFGQdbx25og"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                  In Stock: 80 kg
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                  Sylhet Hub Active
+                </span>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                Grade A+
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    Habiganj Direct Farm
+                  </span>
+<span class="font-mono">Lot #HB-312</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-primary">Gol Begun / Purple Eggplant</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                  Tender pulp, low seed count. Plucked late yesterday evening from Nabiganj wetlands cluster. Excellent for Beguni &amp; roasting.
+                </p>
+</div>
+<!-- Price & Ordering Stepper -->
+<div class="pt-3 flex flex-col gap-3 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">৳55</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">MOQ: 1 kg</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-10 text-center font-label-md text-label-md font-bold text-on-surface">1 kg</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-2 px-3 rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add to Cart
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 3: Sreemangal Deshi Tomato (OUT OF STOCK ALERT CARD) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col overflow-hidden relative opacity-95">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[40%]" data-alt="Freshly harvested rich crimson deshi tomatoes in wooden crates, slight dew on skin, rustic Bangladeshi farm market background under cool morning shade." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjNE_61X4_Tg62GgP8snrKeuDkgPwOSYRMfCFM2R_fCN9gE5A-z3oVE1ac7N4tqjQcYNA8ZD7aUUxBAAxxvOStbum7ae9Z0rqeSj7NvZb56nbRNBAXxSQ0iAHjoH0efg9GsOe-NVTPVRaYThDzuGo-Bltpsn5wBw8VJ8pcsFv4w92pU1ZR9TSJ6O0rhYh4RyFux1_q1qWnYsuPQzX33eSVnXXH1r0e2Kt3rEv3RGkcHNOPGeLNHtf-ow"/>
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-[2px] flex items-center justify-center">
+<div class="bg-error-container text-on-error-container px-3 py-1.5 rounded-lg shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span class="font-label-md text-label-md font-bold">0 kg in Sylhet Sadar</span>
+</div>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-surface-dim text-on-surface-variant font-label-sm text-label-sm font-bold">
+                Grade A
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-outline">
+<span class="material-symbols-outlined text-[14px]">storefront</span>
+                    Sreemangal Valley
+                  </span>
+<span class="font-mono">Lot #SM-109</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-on-surface">Sreemangal Deshi Tomato</h3>
+<!-- Inter-Branch Transfer Alert Banner -->
+<div class="mt-2 p-2.5 rounded-lg bg-surface-container flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">swap_driving_apps</span>
+                    Available at Other Regional Hubs:
+                  </span>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded font-medium">Chattogram: 50 kg</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 rounded font-medium">Dhaka: 100 kg</span>
+</div>
+</div>
+</div>
+<!-- Action buttons for Out of Stock -->
+<div class="pt-3 flex flex-col gap-2 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<span class="font-headline-md text-headline-md font-bold text-outline line-through">৳48</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Restocking at 08:00 PM</span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-bold py-2 px-2 rounded-lg transition-colors flex items-center justify-center gap-1 text-center" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+                    Notify
+                  </button>
+<button class="bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-label-md text-label-md font-bold py-2 px-2 rounded-lg transition-colors flex items-center justify-center gap-1 text-center" type="button">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span>
+                    Inter-Branch
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 4: Green Hot Chillies (Kacha Morich) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Vibrant sharp green fresh chillies (kacha morich) piled high in a shallow wicker basket, water droplets catching crisp daylight in an agro warehouse in Bangladesh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApY31qDLHpO8b6F1QSa13uOBCs4PA0NUpTtrWQZi7lWLDfADTKoSDQ4PhZOKGk4iPJjEw8U0KYNRr5K7QCG3Hhs1AWYKsTRg20Q7mkGTbHtdX9UFzZtiWXVnD7r8L8OwgZDO-qc_7BKT-LZ7jpBCnJZQGNQfj2dktqtgcDSXIMuvYUhQn0QhIBJtdpjNQAyzKlyFsvKjfcYi_GNTDZ4g6pzJtvPweFJAYLJVkc-pIycWVdw6rKfWHbgQ"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                  In Stock: 40 kg
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                  Sylhet Hub Active
+                </span>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                Grade A+
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    Bogura Fresh Transit
+                  </span>
+<span class="font-mono">Lot #BG-012</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-primary">Green Hot Chillies (Kacha Morich)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                  Intense aroma, sharp piquant heat. Direct harvest from Sariakandi riverbank silt soils. 100% stem-on freshness.
+                </p>
+</div>
+<div class="pt-3 flex flex-col gap-3 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">৳85</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">MOQ: 250 g</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-10 text-center font-label-md text-label-md font-bold text-on-surface">500 g</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-2 px-3 rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add to Cart
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 5: Cauliflower (Phulkopi) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Crisp creamy-white heads of cauliflower wrapped in dense green protective leaves, stacked in an agro sorting station, natural daylight highlighting fresh cut stems." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5uOaW9q5RJvtlwoyMbMLK9RZEwT0JnySzuRqJwNDBXw8pjFEdlXYijGDkWCYIe2B6ZB1AJCnSbaNZOCh9bSSj7FH11HiU8v7MarPuRMbKFBexnfyXcIWDh3Ksta9LnKvNYTOdlEYR1cDm--_-iajzCCzrgxAdEJIwqd8KITEMEgo981ifTEv4jaLPcqFOpEuPeuVN2vm8K5Xnn7gYhlBFZ_RduspZtCBvB8-seVVdFgp2DA_vGnFZ8w"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                  In Stock: 120 pcs
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-bold shadow-sm">
+                  Sylhet Hub Active
+                </span>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                Grade A
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    Sreemangal Valley
+                  </span>
+<span class="font-mono">Lot #SM-670</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-primary">Cauliflower (Phulkopi)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                  Dense curd, tightly wrapped guard leaves, harvested early morning from tea-adjacent horticultural beds.
+                </p>
+</div>
+<div class="pt-3 flex flex-col gap-3 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">৳45</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ pc</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Weight: ~800g/pc</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-10 text-center font-label-md text-label-md font-bold text-on-surface">2 pcs</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-2 px-3 rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add to Cart
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- PRODUCT CARD 6: Red Spinach (Lal Shak) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden group">
+<div class="relative w-full h-48 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tender bunches of crimson red spinach (Lal Shak) bound with natural jute string, glistening morning dew on deep red-purple veined leaves, rustic harvest bench." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjiQ8Q0_kufulFgMDrouDNxSOHJLWD8I9Gg1bZpvTKkQGp5DlSFIItMOyk0py3NabPnoKH_QQ-m5Dof20d5L9C8FTGNq9vjVGu7phiB20n9UaPS0uWSHn_7YExJhUGlxP3U03pPTPFz8jeYi4ETyUbXq0wRx8fPZiNj0dL5QQVhzU2IHk2u0Wg1mXhAxosZ87RgmUI-tY8gznU8kCR7-H0ys389bJz4euWuFygdyf8NBpL2Q32ABPodw"/>
+<div class="absolute top-3 left-3 flex flex-col gap-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+                  In Stock: 65 bunches
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm font-bold shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                  Harvested 4:30 AM Today
+                </span>
+</div>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                Grade A+
+              </span>
+</div>
+<div class="p-4 flex flex-col flex-1 justify-between gap-4">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mb-1">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    Golapganj River Silt
+                  </span>
+<span class="font-mono">Lot #GL-404</span>
+</div>
+<h3 class="font-title-lg text-title-lg font-bold text-primary">Red Spinach (Lal Shak)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                  High iron, vibrant red bleed during cooking, tender stems. Washed once with clean borewell water before packing.
+                </p>
+</div>
+<div class="pt-3 flex flex-col gap-3 bg-surface-container-low -mx-4 -mb-4 p-4">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md font-bold text-primary">৳25</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ bunch</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">~350g/bunch</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex items-center bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Decrease quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="w-10 text-center font-label-md text-label-md font-bold text-on-surface">3 bun</span>
+<button aria-label="Increase quantity" class="w-7 h-7 flex items-center justify-center rounded text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-2 px-3 rounded-lg font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.99]" type="button">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+                    Add to Cart
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination & Bulk Logistics Banner -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 mt-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<div>
+<p class="font-title-md text-title-md font-bold text-primary">Need Maund (40 kg) Sacks for Hotels or Aroths?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Switch to B2B wholesale pricing with tiered logistics transport directly from Bogura &amp; Jessore.</p>
+</div>
+</div>
+<a class="px-5 py-2.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-surface-container-high transition-colors whitespace-nowrap" data-path="wholesale-b2b" href="#">
+            Switch to Wholesale B2B
+          </a>
+</div>
+</main>
+</div>
+</div>
+<!-- FLOATING / STICKY DESKTOP CART SUMMARY DRAWER PREVIEW -->
+<!-- Anchored in lower right desktop space with subtle ambient elevation -->
+<aside aria-label="Order manifest" class="shop-order-manifest fixed bottom-6 right-8 z-40 w-96 bg-surface-container-lowest rounded-2xl shadow-xl flex flex-col overflow-hidden transition-all duration-300">
+<!-- Header of Floating Drawer -->
+<div class="bg-primary text-on-primary p-4 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">shopping_basket</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md font-bold leading-tight">Order Manifest</h4>
+<span class="font-label-sm text-label-sm text-on-primary-container">Sylhet Hub Direct Dispatch</span>
+</div>
+</div>
+<span data-cart-count class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+        3 Items
+      </span>
+<button aria-label="Minimize order manifest" aria-expanded="true" class="manifest-toggle ml-1 grid h-8 w-8 place-items-center rounded-lg text-on-primary hover:bg-white/10" type="button">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+<!-- Collapsible Mini Item List -->
+<div data-cart-items class="manifest-items p-4 max-h-48 overflow-y-auto flex flex-col gap-2.5 bg-surface-container-lowest">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium truncate max-w-[170px]">Bogura Diamond Alu (2 kg)</span>
+</div>
+<span class="font-bold text-primary font-mono">৳70</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium truncate max-w-[170px]">Gol Begun / Eggplant (1 kg)</span>
+</div>
+<span class="font-bold text-primary font-mono">৳55</span>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium truncate max-w-[170px]">Cauliflower / Phulkopi (1 pc)</span>
+</div>
+<span class="font-bold text-primary font-mono">৳35</span>
+</div>
+</div>
+<!-- Price Calculation Breakdown -->
+<div class="manifest-details p-4 bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Cart Subtotal</span>
+<span data-cart-subtotal class="font-semibold text-on-surface">৳160</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+          Delivery Hub Charge
+          <span class="material-symbols-outlined text-[14px] text-outline" title="Standard cold-van transit inside Sylhet Sadar">info</span>
+</span>
+<span class="font-semibold text-on-surface">৳40</span>
+</div>
+<div class="pt-2 flex items-baseline justify-between font-title-lg text-title-lg font-bold text-primary">
+<span>Estimated Total</span>
+<span data-cart-total class="font-headline-md text-headline-md text-primary font-extrabold">৳200</span>
+</div>
+<!-- Free Delivery Progress Metric -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div data-free-delivery-progress class="bg-secondary h-1.5 rounded-full" style="width: 53%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span data-free-delivery-message>Add ৳140 more for free delivery</span>
+<span class="font-bold text-secondary">৳300 goal</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="manifest-checkout mt-2 w-full bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container transition-all py-3 px-4 rounded-xl font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-md active:scale-[0.99]" data-path="cart-checkout" href="#">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</aside>
+<!-- Interactive script for client-side micro-interactions -->
+<script>
+    (function initShopInteractions() {
+      const manifest = document.querySelector('.shop-order-manifest');
+      const itemList = manifest.querySelector('[data-cart-items]');
+      const itemCount = manifest.querySelector('[data-cart-count]');
+      const subtotalDisplay = manifest.querySelector('[data-cart-subtotal]');
+      const totalDisplay = manifest.querySelector('[data-cart-total]');
+      const progress = manifest.querySelector('[data-free-delivery-progress]');
+      const freeDeliveryMessage = manifest.querySelector('[data-free-delivery-message]');
+      const deliveryCharge = 40;
+      const freeDeliveryGoal = 300;
+      const cart = new Map([
+        ['Bogura Diamond Alu', { name: 'Bogura Diamond Alu', quantity: 2, unit: 'kg', price: 35 }],
+        ['Gol Begun / Purple Eggplant', { name: 'Gol Begun / Eggplant', quantity: 1, unit: 'kg', price: 55 }],
+        ['Cauliflower (Phulkopi)', { name: 'Cauliflower / Phulkopi', quantity: 1, unit: 'pc', price: 35 }]
+      ]);
+
+      const money = amount => '৳' + amount.toLocaleString('en-BD', { maximumFractionDigits: 2 });
+      const quantityFactor = unit => /^g$/i.test(unit) ? 0.001 : 1;
+      const normalizedUnit = unit => unit.toLowerCase().replace(/s$/, '').replace(/^bunch$/, 'bun');
+      const updateManifest = () => {
+        const items = [...cart.values()];
+        const subtotal = items.reduce((sum, item) => sum + item.quantity * item.price * quantityFactor(item.unit), 0);
+        const remaining = Math.max(0, freeDeliveryGoal - subtotal);
+        itemCount.textContent = `${items.length} ${items.length === 1 ? 'Item' : 'Items'}`;
+        itemList.replaceChildren(...items.map(item => {
+          const row = document.createElement('div');
+          row.className = 'flex items-center justify-between gap-3 font-label-md text-label-md';
+          const name = document.createElement('span');
+          name.className = 'min-w-0 truncate text-on-surface font-medium';
+          name.textContent = `${item.name} (${item.quantity} ${item.unit})`;
+          const price = document.createElement('span');
+          price.className = 'shrink-0 font-bold text-primary font-mono';
+          price.textContent = money(item.quantity * item.price * quantityFactor(item.unit));
+          row.append(name, price);
+          return row;
+        }));
+        subtotalDisplay.textContent = money(subtotal);
+        totalDisplay.textContent = money(subtotal + deliveryCharge);
+        progress.style.width = `${Math.min(100, subtotal / freeDeliveryGoal * 100)}%`;
+        freeDeliveryMessage.textContent = remaining ? `Add ${money(remaining)} more for free delivery` : 'You qualify for free delivery';
+        const cartLink = document.querySelector('header a[data-path="cart-checkout"] span:last-child');
+        if (cartLink) cartLink.textContent = `Cart (${items.length}) • ${money(subtotal)}`;
+      };
+
+      const showFeedback = (message, button) => {
+        let feedback = document.getElementById('shop-cart-feedback');
+        if (!feedback) {
+          feedback = document.createElement('div');
+          feedback.id = 'shop-cart-feedback';
+          feedback.setAttribute('role', 'status');
+          feedback.setAttribute('aria-live', 'polite');
+          feedback.style.cssText = 'position:fixed;top:88px;right:24px;z-index:60;padding:12px 16px;border-radius:12px;background:#14532d;color:#fff;font:600 13px Inter, sans-serif;box-shadow:0 8px 24px #0002;transition:opacity .2s';
+          document.body.append(feedback);
+        }
+        feedback.textContent = message;
+        feedback.style.opacity = '1';
+        clearTimeout(feedback.hideTimer);
+        feedback.hideTimer = setTimeout(() => { feedback.style.opacity = '0'; }, 2200);
+        if (button) {
+          const original = button.innerHTML;
+          button.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> Added';
+          button.classList.add('!bg-secondary');
+          setTimeout(() => {
+            button.innerHTML = original;
+            button.classList.remove('!bg-secondary');
+          }, 1100);
+        }
+      };
+
+      const style = document.createElement('style');
+      style.textContent = `
+        .shop-order-manifest { max-width: calc(100vw - 2rem); }
+        .shop-order-manifest.is-collapsed .manifest-items,
+        .shop-order-manifest.is-collapsed .manifest-details { display: none; }
+        .shop-order-manifest.is-collapsed .manifest-checkout { margin-top: 0; border-radius: 0 0 1rem 1rem; }
+        .manifest-toggle { transition: transform .2s ease; }
+        .shop-order-manifest.is-collapsed .manifest-toggle { transform: rotate(180deg); }
+        @media (max-width: 640px) {
+          .shop-order-manifest { left: 1rem; right: 1rem; bottom: 1rem; width: auto; }
+          #shop-cart-feedback { left: 1rem; right: 1rem; top: 5rem; text-align: center; }
+        }
+      `;
+      document.head.append(style);
+
+      manifest.querySelector('.manifest-toggle').addEventListener('click', event => {
+        const collapsed = manifest.classList.toggle('is-collapsed');
+        event.currentTarget.setAttribute('aria-expanded', String(!collapsed));
+        event.currentTarget.setAttribute('aria-label', collapsed ? 'Expand order manifest' : 'Minimize order manifest');
+      });
+
+      document.querySelectorAll('.group button').forEach(button => {
+        if (!button.textContent.includes('Add to Cart')) return;
+        button.addEventListener('click', () => {
+          const card = button.closest('.group');
+          const name = card.querySelector('h3')?.textContent.trim();
+          const price = Number(card.querySelector('.font-headline-md')?.textContent.replace(/[^\d.]/g, ''));
+          const quantityDisplay = button.parentElement.querySelector('span.w-10');
+          const match = quantityDisplay?.textContent.trim().match(/^([\d.]+)\s*(.*)$/);
+          if (!name || !price || !match) {
+            showFeedback('Could not add this item. Please try again.');
+            return;
+          }
+          const quantity = Number(match[1]);
+          const unit = match[2] || 'kg';
+          const existing = cart.get(name);
+          if (existing && normalizedUnit(existing.unit) !== normalizedUnit(unit)) {
+            showFeedback('This item uses a different unit. Please review your order.');
+            return;
+          }
+          const stockText = card.querySelector('[class*="bg-secondary-fixed"]')?.textContent || '';
+          const stockMatch = stockText.match(/(\d+(?:\.\d+)?)\s*(kg|g|pcs?|bunches?)/i);
+          const stock = stockMatch
+            ? Number(stockMatch[1]) * (/^g$/i.test(stockMatch[2]) ? 0.001 : 1) / quantityFactor(unit)
+            : Infinity;
+          const nextQuantity = (existing?.quantity || 0) + quantity;
+          if (nextQuantity > stock) {
+            showFeedback(`There is not enough stock available for ${name}.`);
+            return;
+          }
+          cart.set(name, { name, quantity: nextQuantity, unit, price });
+          updateManifest();
+          showFeedback(`${name} added to your order.`, button);
+        });
+      });
+
+      manifest.querySelector('.manifest-checkout').addEventListener('click', () => {
+        if (!cart.size) showFeedback('Add produce to your order before checkout.');
+      });
+
+      updateManifest();
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-12 pb-8 mt-12"><div class="max-w-[1440px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10"><div class="md:col-span-1"><div class="flex items-center gap-2 mb-3"><div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">eco</span></div><span class="font-headline-sm text-headline-sm text-primary font-bold">ShobjiLink</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Digitizing Bangladesh's agricultural supply chain directly from regional aroths to commercial kitchens and urban homes.</p><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Government Certified Agritech</span></div></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Fresh Produce</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Daily Field Greens</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Seasonal Gourds &amp; Melons</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Root Crops &amp; Potatoes</a></li><li><a class="hover:text-primary transition-colors" data-path="shop-vegetables" href="#">Organic Certified Batches</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Logistics &amp; Hubs</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Cold Chain Telemetry</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Bogra Regional Mandi</a></li><li><a class="hover:text-primary transition-colors" data-path="wholesale-b2b" href="#">Jessore Transit Station</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Upazila Collection Centers</a></li></ul></div><div><div class="font-title-md text-title-md text-on-surface mb-3">Support &amp; Trust</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><p class="font-label-md text-label-md text-on-surface font-medium">Dhaka Central Dispatch</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">+880 1700-000000</p></li><li><p class="font-body-sm text-body-sm text-on-surface-variant">support@shobjilink.com.bd</p></li><li class="pt-2"><span class="inline-block px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Dispatch Active: 04:00 AM - 11:00 PM</span></li></ul></div></div><div class="pt-6 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-on-surface-variant"><p>© 2025 ShobjiLink Smart Agriculture Logistics. All rights reserved.</p><div class="flex items-center gap-6 font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Fair Price Charter</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">QA Standards</a><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Privacy Policy</a></div></div></div></footer></body></html>

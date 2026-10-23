@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#404941", "primary": "#003b1b", "on-primary-fixed": "#00210d", "tertiary": "#5d1d00", "secondary-fixed-dim": "#4ae176", "surface": "#f9f9ff", "tertiary-container": "#822c00", "on-secondary-container": "#007432", "primary-fixed-dim": "#96d5a3", "inverse-primary": "#96d5a3", "surface-container": "#e7eeff", "surface-container-lowest": "#ffffff", "outline-variant": "#c0c9be", "on-primary-container": "#87c695", "tertiary-fixed": "#ffdbce", "on-secondary-fixed-variant": "#005321", "on-surface": "#111c2d", "surface-container-highest": "#d8e3fb", "surface-bright": "#f9f9ff", "on-secondary": "#ffffff", "error-container": "#ffdad6", "outline": "#717970", "inverse-surface": "#263143", "secondary": "#006e2f", "inverse-on-surface": "#ecf1ff", "primary-container": "#14532d", "on-primary": "#ffffff", "secondary-fixed": "#6bff8f", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#370e00", "tertiary-fixed-dim": "#ffb599", "on-background": "#111c2d", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "on-primary-fixed-variant": "#12512c", "primary-fixed": "#b1f2be", "secondary-container": "#6bff8f", "surface-variant": "#d8e3fb", "error": "#ba1a1a", "surface-dim": "#cfdaf2", "on-error-container": "#93000a", "on-secondary-fixed": "#002109", "on-error": "#ffffff", "on-tertiary-container": "#ff9f7a", "surface-tint": "#2e6a41", "surface-container-high": "#dee8ff", "on-tertiary-fixed-variant": "#7f2b00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "margin-desktop": "2.5rem", "margin-tablet": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-lg": ["Manrope"], "title-md": ["Manrope"], "title-lg": ["Manrope"], "body-md": ["Inter"], "headline-lg-mobile": ["Manrope"], "headline-sm": ["Manrope"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "headline-xl": ["Manrope"], "headline-md": ["Manrope"], "headline-xl-mobile": ["Manrope"] }, fontSize: { "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "label-sm": ["10px", { lineHeight: "14px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["44px", { lineHeight: "52px", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-28 flex flex-col justify-between px-margin py-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="ShobjiLink Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2A_9KHn7I8k93Z2wwdXfZHZVzTfaxrQkUZZLwanHiyYiYluRSDFDmlJkO63FGUH1u13_vOt0mrw_zkkMh3z0j8fRWrJo71uOKIHZ02bp0W1zqFnFJPAuo6XgLHVSaxxPxWibT4fMYAlG3ouvSQF8d22Mq-pGOLRW652kVeOqaaQNUE8wDsT06p4o0O2V9EGdGUDz89_8ce_wS8GilS_D_oOzI8e7uxpwC1Qiyo3O8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">ShobjiLink</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Account Dashboard</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Select Hub" class="h-9 px-space-xs bg-surface-container-low rounded-full flex items-center gap-1 text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md">Dhaka</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></button><button aria-label="Notifications" class="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between bg-surface-container-low rounded-lg px-space-sm py-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Role:</span><span class="font-label-md text-label-md text-primary font-bold truncate">Customer (Wholesale Retail)</span></div><button class="h-7 px-space-xs bg-surface-container-lowest text-primary rounded-full flex items-center gap-0.5 hover:bg-surface-container shadow-[0_1px_4px_rgba(0,0,0,0.03)] transition-colors"><span class="font-label-sm text-label-sm font-semibold">Switch</span><span class="material-symbols-outlined text-[16px]">swap_horiz</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-20 bg-surface"><div class="flex flex-col w-full pb-10 space-y-space-md">
+<!-- Branch Hub Banner -->
+<div class="px-margin pt-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary-fixed/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Live Facility</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Sylhet Central Fulfillment</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">location_on</span>
+            Branch #03 • Subidbazar, Sylhet
+          </p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+</div>
+<!-- Facility Quick Status -->
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">thermostat</span>
+<span>Cold Room: <strong class="text-on-surface">11.4°C</strong></span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">scale</span>
+<span>Weighbridge: <strong class="text-on-surface">Calibrated</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational KPI Metrics (3 Cards) -->
+<div class="px-margin">
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today's Inbound</span>
+<span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+</div>
+<div class="mt-2">
+<div class="font-title-lg text-title-lg text-primary tracking-tight">1,450 <span class="font-label-sm text-label-sm">kg</span></div>
+<span class="inline-block mt-0.5 px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">3 Trucks</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-12 h-1 bg-error"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Stock</span>
+<span class="material-symbols-outlined text-error text-[18px]">emergency</span>
+</div>
+<div class="mt-2">
+<div class="font-title-lg text-title-lg text-error tracking-tight">0 <span class="font-label-sm text-label-sm text-on-surface">kg Tom</span></div>
+<p class="font-label-sm text-label-sm text-error font-medium truncate">Tomatoes Critical!</p>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Orders Queue</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+</div>
+<div class="mt-2">
+<div class="font-title-lg text-title-lg text-on-surface tracking-tight">42 <span class="font-label-sm text-label-sm text-on-surface-variant">pkgs</span></div>
+<span class="inline-block mt-0.5 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Needs Packing</span>
+</div>
+</div>
+</div>
+<!-- Active Branch Stock Breakdown Micro-Bar -->
+<div class="mt-2 bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between text-on-surface font-label-md text-label-md">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Branch Stash:</span>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-semibold">🥔 <span>Potatoes:</span> <span class="text-primary">200kg</span></span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 font-semibold">🍆 <span>Eggplant:</span> <span class="text-primary">80kg</span></span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 font-bold text-error">🍅 <span id="kpiTomatoStock">0kg</span></span>
+</div>
+</div>
+</div>
+<!-- Interactive Inbound QA Inspection Card -->
+<div class="px-margin space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h3 class="font-title-md text-title-md text-primary">Inbound Acceptance &amp; QA</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Unloading At Bay 2</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-md space-y-space-md transition-all duration-300" id="shipmentCard">
+<!-- Shipment Header Meta -->
+<div class="flex items-start justify-between pb-3 bg-surface-container-low rounded-lg p-3">
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-primary font-bold">Shipment #SH-9042</span>
+<span class="px-1.5 py-0.2 bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-semibold">Moulvibazar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Moulvibazar Upazila Farmers Cooperative</p>
+<div class="flex items-center gap-3 pt-1 text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">local_shipping</span>
+              Sylhet-Metro-U-14-3012
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">badge</span>
+              Driver: Rafiqul Islam
+            </span>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Manifest Expected</span>
+<span class="font-headline-sm text-headline-sm text-primary">250 <span class="font-label-sm text-label-sm">kg</span></span>
+<span class="block font-label-sm text-label-sm font-semibold text-secondary">Deshi Tomatoes</span>
+</div>
+</div>
+<!-- Live Weight Scale & Discrepancy Matrix -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container rounded-xl p-3">
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Digital Scale Reading</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary" id="scaleWeightVal">248.5</span>
+<span class="font-label-md text-label-md text-on-surface-variant">kg</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-container font-medium block">
+            -1.5 kg natural moisture loss
+          </span>
+</div>
+<div class="flex flex-col justify-center items-end text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Scale Transceiver</span>
+<div class="flex items-center gap-1 text-secondary mt-1">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span class="font-label-sm text-label-sm font-bold">Bluetooth Synced</span>
+</div>
+<button class="mt-1 text-primary font-label-sm text-label-sm font-semibold underline" id="btnReWeigh">Re-tare Scale</button>
+</div>
+</div>
+<!-- QA Grade Selector -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">QA Freshness Grade</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="gradeDescription">Export &amp; Premium Retail Quality</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="grade-pill py-2 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex flex-col items-center justify-center transition-all shadow-sm" data-grade="A" type="button">
+<span class="font-bold">Grade A</span>
+<span class="font-label-sm text-label-sm opacity-90">Premium Firm</span>
+</button>
+<button class="grade-pill py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex flex-col items-center justify-center transition-all" data-grade="B" type="button">
+<span class="font-bold">Grade B</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Commercial</span>
+</button>
+<button class="grade-pill py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md flex flex-col items-center justify-center transition-all" data-grade="C" type="button">
+<span class="font-bold">Grade C</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Processing/Sauce</span>
+</button>
+</div>
+</div>
+<!-- Damaged / Rotten Rejection Section with Photo Preview -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[18px]">remove_shopping_cart</span>
+<label class="font-label-lg text-label-lg text-on-surface" for="rejectInput">Rejected Rotten / Crushed</label>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">Farmers Credit Adjusted</span>
+</div>
+<div class="flex items-center gap-3">
+<!-- Stepper Input for Rejection -->
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm p-1">
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface-container-low text-on-surface active:scale-95 transition-transform" id="btnMinusReject" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<div class="px-3 flex items-center gap-0.5">
+<input class="w-12 text-center font-title-md text-title-md text-error font-bold bg-transparent focus:outline-none" id="rejectInput" max="50" min="0" step="0.5" type="number" value="5"/>
+<span class="font-label-md text-label-md text-on-surface-variant">kg</span>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded bg-surface-container-low text-on-surface active:scale-95 transition-transform" id="btnPlusReject" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Photo Verification Thumbnail -->
+<div class="flex-1 flex items-center gap-2 bg-surface-container-lowest rounded-lg p-1.5 shadow-sm">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up inspection photo of ripe red tomatoes with minor transit bruising and split skins resting on an industrial stainless steel scale in a warehouse." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx03QfabtQ8AXvkykb7buU7sEiH5grmgz9kMMiSOQEIFEBuSaWdTcVDBXoP-eBxG9NZg_uSSIF4eH8jKCMA2lbjYn2DnTaH5gq-0Rhd9tAlj4thtwEU7qfsJjfL53ZCxd3haja-koYPatrTsbd4FEhm651QoUvdiCAZpJdfiQOlup_vS9p1z4p9HXF8fefv2Qp8MmNAXvW197jZ0H5Z86zhHkte6_cM2JMDbbvnlH6"/>
+<span class="absolute bottom-0 inset-x-0 bg-inverse-surface/70 text-inverse-on-surface font-label-sm text-[8px] text-center">QA #1</span>
+</div>
+<div class="min-w-0 flex-1">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface block truncate">Transit Bruise Logged</span>
+<button class="text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5 hover:underline" type="button">
+<span class="material-symbols-outlined text-[13px]">add_a_photo</span>
+                Retake
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Net Accepted Stock Summary Pill -->
+<div class="bg-primary/5 rounded-xl p-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Net Accepted Stock to Add</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold" id="netStockLabel">243.5</span>
+<span class="font-title-md text-title-md text-primary font-bold">kg</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+</div>
+</div>
+<!-- Prominent Action CTA -->
+<button class="w-full py-3.5 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold shadow-md active:scale-[0.99] transition-all flex items-center justify-center gap-2" id="btnVerifyInventory" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>Verify &amp; Add to Sylhet Branch Inventory</span>
+</button>
+<!-- Immediate Live Sync Notice Banner -->
+<div class="rounded-lg p-2.5 bg-secondary-fixed/30 text-on-secondary-fixed-variant flex items-start gap-2 text-left" id="liveSyncNotice">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">bolt</span>
+<p class="font-body-sm text-body-sm leading-snug">
+          Clicking will immediately update <strong>Sylhet Tomato</strong> availability from <span class="text-error font-bold">0 kg</span> to <strong class="text-secondary font-bold" id="noticeStockText">243.5 kg</strong> on customer wholesale shopping pages!
+        </p>
+</div>
+</div>
+</div>
+<!-- Branch Stock Transfer Request Widget -->
+<div class="px-margin space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[20px]">swap_calls</span>
+<h3 class="font-title-md text-title-md text-on-surface">Inter-Branch Stock Transfer</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Schedule</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">schedule</span>
+            Daily 2:00 PM Express
+          </span>
+<h4 class="font-title-md text-title-md text-on-surface mt-1">Chattogram Hub → Sylhet Central</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Scheduled refrigerated trunkline crossing Comilla corridor.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">alt_route</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="text-2xl">🥔</span>
+<div>
+<span class="font-label-lg text-label-lg font-bold text-on-surface block">Munshiganj Diamond Potatoes</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Current Sylhet Buffer: 200 kg (Low)</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title-md text-title-md text-primary font-bold">100 kg</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Requested</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Approved by Area Logistics</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all flex items-center gap-1" id="btnRequestTransfer" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Dispatch Requisition</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Low Stock Alert Cards with Automated Restock Trigger -->
+<div class="px-margin space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-error text-[20px]">notification_important</span>
+<h3 class="font-title-md text-title-md text-on-surface">Critical Low-Stock Alerts</h3>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">2 Triggers Active</span>
+</div>
+<!-- Alert Card 1: Eggplant -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-lg">🍆</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold block leading-tight">Begun (Long Eggplant)</span>
+<span class="font-label-sm text-label-sm text-error font-medium">80 kg remaining • Safe Min: 150 kg</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-bold">Deficit: 70kg</span>
+</div>
+</div>
+<!-- Auto Restock Progress / Trigger Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">smart_toy</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Auto-PO to Habiganj Aroths</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Target rate: ৳38/kg • 150 kg lot</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all" onclick="this.innerHTML='Triggered • PO #HB-44'; this.classList.remove('bg-primary'); this.classList.add('bg-surface-container-high', 'text-on-surface');" type="button">
+          Trigger Auto-PO
+        </button>
+</div>
+</div>
+<!-- Alert Card 2: Green Chili -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-lg">🌶️</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface font-semibold block leading-tight">Kacha Morich (Green Chili)</span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">25 kg remaining • Safe Min: 50 kg</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold">Deficit: 25kg</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">sync_alt</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold block">Auto-Restock via Sreemangal Hub</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Scheduled dispatch: 05:30 AM tomorrow</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all" onclick="this.innerHTML='Confirmed • 50 kg'; this.classList.remove('bg-primary'); this.classList.add('bg-surface-container-high', 'text-on-surface');" type="button">
+          Authorize Early
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Modal / Notification Toast (Hidden by default, triggered on verify) -->
+<div class="fixed inset-x-margin bottom-20 z-50 bg-inverse-surface text-inverse-on-surface p-4 rounded-xl shadow-xl flex items-center justify-between transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="successToast">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">check</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-inverse-on-surface font-bold">Sylhet Inventory Live!</p>
+<p class="font-body-sm text-body-sm opacity-90" id="toastDetail">243.5 kg Tomatoes uploaded to customer catalogue.</p>
+</div>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" id="closeToast" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  (function initInboundQAHqb() {
+    const scaleWeight = 248.5;
+    const rejectInput = document.getElementById('rejectInput');
+    const netStockLabel = document.getElementById('netStockLabel');
+    const noticeStockText = document.getElementById('noticeStockText');
+    const btnMinusReject = document.getElementById('btnMinusReject');
+    const btnPlusReject = document.getElementById('btnPlusReject');
+    const btnVerify = document.getElementById('btnVerifyInventory');
+    const btnReWeigh = document.getElementById('btnReWeigh');
+    const successToast = document.getElementById('successToast');
+    const closeToast = document.getElementById('closeToast');
+    const kpiTomatoStock = document.getElementById('kpiTomatoStock');
+    const gradeButtons = document.querySelectorAll('.grade-pill');
+    const gradeDesc = document.getElementById('gradeDescription');
+    const shipmentCard = document.getElementById('shipmentCard');
+    const btnRequestTransfer = document.getElementById('btnRequestTransfer');
+
+    const gradeDescriptions = {
+      'A': 'Export & Premium Retail Quality (Firm & Unblemished)',
+      'B': 'Standard Commercial Grocery Quality (Uniform Ripening)',
+      'C': 'Local Processing / Puree / Sauce Grade'
+    };
+
+    function recalculateNet() {
+      let rejected = parseFloat(rejectInput.value) || 0;
+      if (rejected < 0) rejected = 0;
+      if (rejected > scaleWeight) rejected = scaleWeight;
+      rejectInput.value = rejected;
+
+      const net = Math.max(0, scaleWeight - rejected).toFixed(1);
+      netStockLabel.textContent = net;
+      noticeStockText.textContent = net + ' kg';
+      return net;
+    }
+
+    if (btnMinusReject && btnPlusReject && rejectInput) {
+      btnMinusReject.addEventListener('click', () => {
+        let val = parseFloat(rejectInput.value) || 0;
+        if (val > 0) {
+          rejectInput.value = (val - 0.5).toFixed(1);
+          recalculateNet();
+        }
+      });
+
+      btnPlusReject.addEventListener('click', () => {
+        let val = parseFloat(rejectInput.value) || 0;
+        rejectInput.value = (val + 0.5).toFixed(1);
+        recalculateNet();
+      });
+
+      rejectInput.addEventListener('input', recalculateNet);
+    }
+
+    // Grade selection pills
+    gradeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        gradeButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        const g = btn.dataset.grade;
+        if (gradeDesc && gradeDescriptions[g]) {
+          gradeDesc.textContent = gradeDescriptions[g];
+        }
+      });
+    });
+
+    // Tare scale simulated micro-interaction
+    if (btnReWeigh) {
+      btnReWeigh.addEventListener('click', () => {
+        btnReWeigh.textContent = 'Stabilizing...';
+        btnReWeigh.disabled = true;
+        setTimeout(() => {
+          btnReWeigh.textContent = 'Re-tare Scale';
+          btnReWeigh.disabled = false;
+        }, 600);
+      });
+    }
+
+    // Verify & Commit Stock Interaction
+    if (btnVerify) {
+      btnVerify.addEventListener('click', () => {
+        const finalNet = recalculateNet();
+        
+        // Update Live Stash UI
+        if (kpiTomatoStock) {
+          kpiTomatoStock.textContent = finalNet + 'kg';
+          kpiTomatoStock.classList.remove('text-error');
+          kpiTomatoStock.classList.add('text-secondary');
+        }
+
+        // Transform Acceptance Card to Accepted State
+        btnVerify.innerHTML = `
+          <span class="material-symbols-outlined text-[20px]">task_alt</span>
+          <span>Verified & Stock Synchronized!</span>
+        `;
+        btnVerify.classList.remove('bg-primary', 'hover:bg-primary-container');
+        btnVerify.classList.add('bg-secondary', 'text-on-secondary');
+        btnVerify.disabled = true;
+
+        // Show Toast Notification
+        const toastDetail = document.getElementById('toastDetail');
+        if (toastDetail) {
+          toastDetail.textContent = finalNet + ' kg Tomatoes uploaded to customer catalogue.';
+        }
+        if (successToast) {
+          successToast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+          successToast.classList.add('translate-y-0', 'opacity-100');
+          setTimeout(() => {
+            hideToast();
+          }, 4500);
+        }
+      });
+    }
+
+    function hideToast() {
+      if (successToast) {
+        successToast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        successToast.classList.remove('translate-y-0', 'opacity-100');
+      }
+    }
+
+    if (closeToast) {
+      closeToast.addEventListener('click', hideToast);
+    }
+
+    // Inter-Branch Requisition Micro-action
+    if (btnRequestTransfer) {
+      btnRequestTransfer.addEventListener('click', () => {
+        btnRequestTransfer.innerHTML = `
+          <span class="material-symbols-outlined text-[16px]">check</span>
+          <span>Requisition Queued</span>
+        `;
+        btnRequestTransfer.classList.remove('bg-secondary');
+        btnRequestTransfer.classList.add('bg-surface-container-high', 'text-on-surface');
+        btnRequestTransfer.disabled = true;
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="shop-home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Shop</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="bulk-b2b" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Bulk/B2B</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="track-orders" href="#"><span class="material-symbols-outlined text-[22px]">route</span><span class="font-label-sm text-label-sm">Track</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="account-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a></div></nav></body></html>

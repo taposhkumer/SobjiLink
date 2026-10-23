@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#404941", "primary": "#003b1b", "on-primary-fixed": "#00210d", "tertiary": "#5d1d00", "secondary-fixed-dim": "#4ae176", "surface": "#f9f9ff", "tertiary-container": "#822c00", "on-secondary-container": "#007432", "primary-fixed-dim": "#96d5a3", "inverse-primary": "#96d5a3", "surface-container": "#e7eeff", "surface-container-lowest": "#ffffff", "outline-variant": "#c0c9be", "on-primary-container": "#87c695", "tertiary-fixed": "#ffdbce", "on-secondary-fixed-variant": "#005321", "on-surface": "#111c2d", "surface-container-highest": "#d8e3fb", "surface-bright": "#f9f9ff", "on-secondary": "#ffffff", "error-container": "#ffdad6", "outline": "#717970", "inverse-surface": "#263143", "secondary": "#006e2f", "inverse-on-surface": "#ecf1ff", "primary-container": "#14532d", "on-primary": "#ffffff", "secondary-fixed": "#6bff8f", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#370e00", "tertiary-fixed-dim": "#ffb599", "on-background": "#111c2d", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "on-primary-fixed-variant": "#12512c", "primary-fixed": "#b1f2be", "secondary-container": "#6bff8f", "surface-variant": "#d8e3fb", "error": "#ba1a1a", "surface-dim": "#cfdaf2", "on-error-container": "#93000a", "on-secondary-fixed": "#002109", "on-error": "#ffffff", "on-tertiary-container": "#ff9f7a", "surface-tint": "#2e6a41", "surface-container-high": "#dee8ff", "on-tertiary-fixed-variant": "#7f2b00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "margin-desktop": "2.5rem", "margin-tablet": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-lg": ["Manrope"], "title-md": ["Manrope"], "title-lg": ["Manrope"], "body-md": ["Inter"], "headline-lg-mobile": ["Manrope"], "headline-sm": ["Manrope"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "headline-xl": ["Manrope"], "headline-md": ["Manrope"], "headline-xl-mobile": ["Manrope"] }, fontSize: { "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "label-sm": ["10px", { lineHeight: "14px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["44px", { lineHeight: "52px", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-28 flex flex-col justify-between px-margin py-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="ShobjiLink Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2A_9KHn7I8k93Z2wwdXfZHZVzTfaxrQkUZZLwanHiyYiYluRSDFDmlJkO63FGUH1u13_vOt0mrw_zkkMh3z0j8fRWrJo71uOKIHZ02bp0W1zqFnFJPAuo6XgLHVSaxxPxWibT4fMYAlG3ouvSQF8d22Mq-pGOLRW652kVeOqaaQNUE8wDsT06p4o0O2V9EGdGUDz89_8ce_wS8GilS_D_oOzI8e7uxpwC1Qiyo3O8"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">ShobjiLink</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Track Orders</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Select Hub" class="h-9 px-space-xs bg-surface-container-low rounded-full flex items-center gap-1 text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md">Dhaka</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></button><button aria-label="Notifications" class="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between bg-surface-container-low rounded-lg px-space-sm py-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Role:</span><span class="font-label-md text-label-md text-primary font-bold truncate">Customer (Wholesale Retail)</span></div><button class="h-7 px-space-xs bg-surface-container-lowest text-primary rounded-full flex items-center gap-0.5 hover:bg-surface-container shadow-[0_1px_4px_rgba(0,0,0,0.03)] transition-colors"><span class="font-label-sm text-label-sm font-semibold">Switch</span><span class="material-symbols-outlined text-[16px]">swap_horiz</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Advancer Bar -->
+<section class="px-margin pt-space-sm pb-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Interactive Demo Simulator</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant font-semibold" id="currentStepBadge">Step 4 of 5</span>
+</div>
+<!-- Step Selector Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1" id="stepPillContainer">
+<button class="step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant transition-all hover:bg-surface-container" data-step="1" onclick="setSimulatedStep(1)">
+        1. Confirmed
+      </button>
+<button class="step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant transition-all hover:bg-surface-container" data-step="2" onclick="setSimulatedStep(2)">
+        2. QA Sourced
+      </button>
+<button class="step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant transition-all hover:bg-surface-container" data-step="3" onclick="setSimulatedStep(3)">
+        3. Regional Hub
+      </button>
+<button class="step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary shadow-sm font-bold transition-all" data-step="4" onclick="setSimulatedStep(4)">
+        4. Out for Delivery
+      </button>
+<button class="step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant transition-all hover:bg-surface-container" data-step="5" onclick="setSimulatedStep(5)">
+        5. Delivered
+      </button>
+</div>
+</section>
+<!-- Live Pulse Order Header -->
+<section class="px-margin mt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-sm mb-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-title-lg text-title-lg text-on-surface">#SL-88421</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1" id="orderStateTag">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+              In Transit
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sylhet Sadar • Zindabazar Hub Node</p>
+</div>
+<div class="text-right">
+<p class="font-title-md text-title-md text-primary font-bold">৳187.50</p>
+<span class="inline-flex items-center gap-0.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> bKash Paid
+          </span>
+</div>
+</div>
+<!-- Order Micro Receipt Dropdown Tray -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-1.5 mt-space-xs">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            3 kg Bogura Diamond Potato
+          </span>
+<span class="font-medium text-on-surface">৳105.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            1.5 kg Gol Begun (Purple Round)
+          </span>
+<span class="font-medium text-on-surface">৳82.50</span>
+</div>
+<div class="pt-1 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">receipt_long</span> TrxID: 9MK821LP
+          </span>
+<span>Instant Wholesale Direct</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Real-time Live Tracking Map Canvas -->
+<section class="px-margin mt-space-md">
+<div class="relative bg-surface-container rounded-xl overflow-hidden shadow-sm">
+<!-- Simulated Map Visual Viewport -->
+<div class="relative w-full h-56 bg-cover bg-center" data-location="Sylhet, Bangladesh" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKZEVVhxk4v2r4p3vKyqyTmRp4r1qHj7zj8y4J4FtxEVDBqpO6zmK_QEbmvQoZWk4LzoEtTCBhZWeLiYxDJ-E7ASgByiTPljLJ4Zmz0Jqz1o06Fgy7oWnvJG9AlhHLhGidB9AbD0A2bKYAG-nIyj7uu2AyVc-j69Xu4otY2vmfJA3_SWIgSSjyxH8mp3D3sfQ8teqNTVzc9nUQe267Q8d912Q69_hCZ-XSUjzNiWXX')">
+<!-- Interactive Overlay Paths & Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-primary/20"></div>
+<!-- Simulated Route Vector Canvas Layer -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<path class="opacity-80" d="M 45 155 Q 140 135 180 90 T 320 50" fill="none" id="routePath" stroke="#6bff8f" stroke-dasharray="6 4" stroke-width="4"></path>
+</svg>
+<!-- Hub Pin Point (Sylhet Central Hub) -->
+<div class="absolute left-6 bottom-8 flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-surface-container-lowest text-primary flex items-center justify-center shadow-md ring-2 ring-primary">
+<span class="material-symbols-outlined text-[16px]">warehouse</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary font-bold mt-1 shadow-sm">Hub</span>
+</div>
+<!-- Rider Marker with Dynamic Position Simulation -->
+<div class="absolute top-16 left-44 flex flex-col items-center transition-all duration-700 ease-out" id="riderMarker">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-10 h-10 rounded-full bg-secondary-fixed/50 animate-ping"></span>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg ring-2 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[18px]">two_wheeler</span>
+</div>
+</div>
+<span class="mt-1 px-1.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm whitespace-nowrap" id="riderSpeedBadge">22 km/h</span>
+</div>
+<!-- Destination Pin Point (Customer Flat 4B) -->
+<div class="absolute right-6 top-8 flex flex-col items-center">
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-md ring-2 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[16px]">home_pin</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-label-sm text-label-sm text-tertiary-container font-bold mt-1 shadow-sm">Amberkhana</span>
+</div>
+<!-- Floating Live ETA Chip -->
+<div class="absolute top-3 left-3 bg-surface-container-lowest/95 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-fixed-dim opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-medium">Estimated Arrival</p>
+<p class="font-title-md text-title-md text-primary font-bold leading-tight" id="etaDisplay">14 mins (07:15 AM)</p>
+</div>
+</div>
+<!-- Map Layer Badge -->
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded font-label-sm text-label-sm text-on-surface-variant">
+          GPS Live Tracking
+        </div>
+</div>
+<!-- Courier Contact Tray -->
+<div class="p-space-sm bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-11 h-11 rounded-full bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of Tanvir Ahmed, a polite Bangladeshi logistics delivery rider wearing a green high-visibility courier jacket with reflective bands, smiling warmly under bright morning outdoor daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGVQYqCVKpbzYTVjYwkWa6770d3JJFo626WMYhB-GRr5ZFJHRcZEHB99ExvbYkRZuRweM9GHcSEay0bcdf5mER_R0MrBXhJkSTH0QlS3KCUCts9lcmW1ww87w9FhKyllht1sz63RcXWAl8tSWyA7xA48hQ7xhOYWVsXS-a7oUgXyp8NLkWfAMcgmxFj3LGh-4oNjgotzLYY2DbSRdIXcgw6nlTt-uIXXQEHoc6AM0w"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-md text-title-md text-on-surface leading-none">Tanvir Ahmed</h3>
+<span class="px-1.5 py-0.2 rounded bg-surface-container font-label-sm text-label-sm text-primary font-bold">4.9 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Green e-Bike Pilot • Sylhet Fleet</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a aria-label="Call Rider" class="w-9 h-9 rounded-full bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container transition-colors" href="tel:01700000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="h-9 px-3 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 hover:bg-primary-container transition-colors" onclick="pingRiderNotice()">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+            Chat
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- OTP Verification Card -->
+<section class="px-margin mt-space-md">
+<div class="bg-gradient-to-r from-primary via-primary-container to-primary text-on-primary rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container font-semibold">Secure Delivery Handover</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary mt-0.5">Delivery OTP</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Share with Tanvir only after inspecting produce</p>
+</div>
+<div class="bg-surface-container-lowest/15 backdrop-blur-md px-4 py-2 rounded-xl text-center shadow-inner">
+<span class="font-label-sm text-label-sm text-on-primary-container block">DEMO CODE</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary font-extrabold tracking-widest" id="otpCodeDisplay">4892</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual-Tier Supply Chain Architecture Section -->
+<section class="px-margin mt-space-md space-y-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_tree</span>
+          Dual-Tier Supply Chain
+        </h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Cold Chain Monitored</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Traceability from rural farm procurement to customer door.</p>
+</div>
+<!-- UPPER TIER: Regional Farm Sourcing -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs border-b border-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">agriculture</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary leading-tight">Tier 1: Regional Farm Sourcing</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Procured from Moulvibazar Growers</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-bold">100% QA Passed</span>
+</div>
+<!-- Upper Steps Timeline -->
+<div class="space-y-space-sm relative pl-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Node 1 -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">check</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Moulvibazar Upazila Sorting Hub</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Potatoes &amp; Eggplants graded &amp; crated</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">04:30 AM</span>
+</div>
+</div>
+<!-- Node 2 (Reefer Truck) -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">check</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Reefer Truck #Sylhet-Ta-11-2041</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Refrigerated at constant 9.4°C (Humidity 84%)</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">05:15 AM</span>
+</div>
+</div>
+<!-- Node 3 -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">check</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Sylhet Central Hub Warehouse</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sanitized, weighed and verified for dispatch</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:15 AM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- LOWER TIER: Last-Mile Urban Logistics -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm pb-space-xs border-b border-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">pedal_bike</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-primary leading-tight">Tier 2: Last-Mile Delivery</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Active Metro Dispatch Route</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold" id="tier2StatusBadge">Rider Dispatched</span>
+</div>
+<!-- Lower Steps Timeline -->
+<div class="space-y-space-sm relative pl-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container">
+<!-- Sub-Node A -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">check</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Assigned to Tanvir Ahmed (e-Bike #09)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Secured in breathable insulated bag</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:40 AM</span>
+</div>
+</div>
+<!-- Sub-Node B (Dynamic step highlight) -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-secondary flex items-center justify-center ring-4 ring-surface-container-lowest animate-pulse" id="transitDot">
+<span class="material-symbols-outlined text-on-secondary text-[10px]">near_me</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-primary font-bold" id="transitTitle">Approaching Zindabazar Crossing</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="transitDesc">En route through Point Road (0.9 km away)</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="transitTime">07:01 AM</span>
+</div>
+</div>
+<!-- Sub-Node C (Destination) -->
+<div class="relative">
+<span class="absolute -left-6 top-0.5 w-4 h-4 rounded-full bg-surface-container flex items-center justify-center ring-4 ring-surface-container-lowest" id="destDot">
+<span class="material-symbols-outlined text-on-surface-variant text-[10px]">home</span>
+</span>
+<div class="flex items-start justify-between">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface-variant font-medium" id="destTitle">Customer Doorstep Handover</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flat 4B, Green View Tower, Amberkhana</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="destStatusText">Pending</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Proof of Packing / QA Inspection Stamp -->
+<section class="px-margin mt-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Proof of Sourcing &amp; Pack</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Timestamped photo stamp from Sylhet Central QA Hub</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<!-- QA Image 1 -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container h-28 group">
+<img class="w-full h-full object-cover" data-alt="High quality close up photo of freshly harvested washed Bogura Diamond potatoes packed neatly in an aerated cardboard delivery crate with QA grade stamp visible, warm early morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYLwvS_ssYfzRFdWj_uzNZMtfnXmK6CZGTSb0AfjOcOSABV0swQUgZZRfcHyGZxEAwU1EEH4az9vT-X0LIGpVIy14oU57hZ4qZ_TX2QrSqvma9h5Em-i1F_xpQNEq6S8FEEB8v3c8C80I3n1eh_hvwdKjJnlcYbpDz7Vrs8XJgHOhm8RxHlvBT-nwFiSDKTKajHe0ls35cT3HitsTAEEl8kwMT257fgG0g3DJlzoE0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 flex items-center justify-between text-on-secondary">
+<span class="font-label-sm text-label-sm font-semibold">Potato (3.04 kg)</span>
+<span class="font-label-sm text-label-sm bg-secondary px-1.5 py-0.2 rounded">Passed</span>
+</div>
+</div>
+<!-- QA Image 2 -->
+<div class="relative rounded-lg overflow-hidden bg-surface-container h-28 group">
+<img class="w-full h-full object-cover" data-alt="Glossy dark purple fresh round eggplants Gol Begun inspected on a stainless steel agricultural sorting counter with moisture droplets, bright clean farm sorting hub backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjivSLOOUmn2YVCFs-lk4_w-fd7IVaI_MWfo-xpluA_kuhGRsa65-wYUW4kyjHqr0brKI9nIrTbCFfqNgW8YxjexVtj2KAMxbA-SeuAwSZwtC-IC7PXYS5P_5bUImchqLzEiZB55R_pHp-XbYU2iy9uZB87uNHks_3-0Sfg216BGDhrqr3PSYrbUhg741LrKvdHNlexcWX-6dgET8Ka_exJ9dg8Riu__LdJim8aKRK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-1.5 left-2 right-2 flex items-center justify-between text-on-secondary">
+<span class="font-label-sm text-label-sm font-semibold">Begun (1.52 kg)</span>
+<span class="font-label-sm text-label-sm bg-secondary px-1.5 py-0.2 rounded">Passed</span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">scale</span>
+          Net Weight: 4.56 kg verified
+        </span>
+<span class="text-primary font-medium">Sylhet Inspector #402</span>
+</div>
+</div>
+</section>
+<!-- Actions & Invoicing Grid -->
+<section class="px-margin mt-space-md space-y-space-xs">
+<!-- Invoice Download Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm hover:bg-primary-container active:scale-[0.99] transition-all" onclick="downloadInvoiceMock()">
+<span class="material-symbols-outlined text-[20px]">download</span>
+      Download Tax Invoice (৳187.50)
+    </button>
+<!-- Support & Quality Issue Secondary Action -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="h-10 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container transition-colors" onclick="reportIssuePrompt()">
+<span class="material-symbols-outlined text-[18px] text-tertiary">report_problem</span>
+        Quality Issue?
+      </button>
+<button class="h-10 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container transition-colors" onclick="shareTrackingLink()">
+<span class="material-symbols-outlined text-[18px] text-primary">share</span>
+        Share Tracking
+      </button>
+</div>
+</section>
+<!-- Interactive Toast Floating Alert -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="actionToast">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" id="toastIcon">check_circle</span>
+<span id="toastMessage">Simulation updated</span>
+</div>
+</div>
+<script>
+  // State Simulation Data Structure
+  const simulationSteps = {
+    1: {
+      badge: "Step 1 of 5",
+      orderTag: "Order Placed",
+      orderTagClass: "bg-surface-container text-on-surface-variant",
+      eta: "Scheduled (2 hrs)",
+      riderMarkerPos: "top-32 left-8",
+      riderSpeed: "Stationary",
+      transitDotClass: "bg-surface-container text-on-surface-variant",
+      transitTitle: "Order Sourced & Registered",
+      transitDesc: "Order received in Moulvibazar system.",
+      destText: "Pending dispatch",
+      tier2Badge: "Awaiting QA",
+      otpState: "4892 (Inactive)"
+    },
+    2: {
+      badge: "Step 2 of 5",
+      orderTag: "Sorting & QA",
+      orderTagClass: "bg-tertiary-fixed text-on-tertiary-fixed-variant",
+      eta: "Sorting (06:00 AM)",
+      riderMarkerPos: "top-28 left-16",
+      riderSpeed: "Sorting Bay",
+      transitDotClass: "bg-secondary text-on-secondary",
+      transitTitle: "100% Quality Checked",
+      transitDesc: "Potatoes graded & pre-chilled in cold box.",
+      destText: "Pending dispatch",
+      tier2Badge: "Hub Processing",
+      otpState: "4892 (Inactive)"
+    },
+    3: {
+      badge: "Step 3 of 5",
+      orderTag: "Hub Dispatched",
+      orderTagClass: "bg-secondary-fixed text-on-secondary-fixed",
+      eta: "Arriving Hub (45 mins)",
+      riderMarkerPos: "top-24 left-28",
+      riderSpeed: "Truck in transit",
+      transitDotClass: "bg-secondary text-on-secondary animate-pulse",
+      transitTitle: "Truck Dispatched from Regional Hub",
+      transitDesc: "Heading via highway to Sylhet Central Hub.",
+      destText: "Transit in progress",
+      tier2Badge: "En Route to Central Hub",
+      otpState: "4892 (Standby)"
+    },
+    4: {
+      badge: "Step 4 of 5",
+      orderTag: "Out for Delivery",
+      orderTagClass: "bg-secondary-fixed text-on-secondary-fixed",
+      eta: "14 mins (07:15 AM)",
+      riderMarkerPos: "top-16 left-44",
+      riderSpeed: "22 km/h",
+      transitDotClass: "bg-secondary text-on-secondary animate-pulse",
+      transitTitle: "Approaching Zindabazar Crossing",
+      transitDesc: "En route through Point Road (0.9 km away)",
+      destText: "Pending Handover",
+      tier2Badge: "Rider Dispatched",
+      otpState: "4892"
+    },
+    5: {
+      badge: "Step 5 of 5",
+      orderTag: "Delivered",
+      orderTagClass: "bg-primary text-on-primary",
+      eta: "Delivered at 07:12 AM",
+      riderMarkerPos: "top-8 right-10",
+      riderSpeed: "Arrived",
+      transitDotClass: "bg-secondary text-on-secondary",
+      transitTitle: "Safely Handed Over",
+      transitDesc: "Order verified via OTP & sealed bag delivered.",
+      destText: "Delivered & Inspected",
+      tier2Badge: "Trip Completed",
+      otpState: "Verified ✓"
+    }
+  };
+
+  function setSimulatedStep(stepNumber) {
+    const data = simulationSteps[stepNumber];
+    if (!data) return;
+
+    // Update buttons
+    document.querySelectorAll(".step-btn").forEach(btn => {
+      const step = parseInt(btn.getAttribute("data-step"));
+      if (step === stepNumber) {
+        btn.className = "step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary shadow-sm font-bold transition-all";
+      } else {
+        btn.className = "step-btn shrink-0 px-3 py-1.5 rounded-full text-label-sm font-label-sm bg-surface-container-highest text-on-surface-variant transition-all hover:bg-surface-container";
+      }
+    });
+
+    // Update badges & ETA
+    document.getElementById("currentStepBadge").innerText = data.badge;
+    const orderTag = document.getElementById("orderStateTag");
+    orderTag.innerText = data.orderTag;
+    orderTag.className = "px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold flex items-center gap-1 " + data.orderTagClass;
+
+    document.getElementById("etaDisplay").innerText = data.eta;
+    document.getElementById("riderSpeedBadge").innerText = data.riderSpeed;
+    document.getElementById("transitTitle").innerText = data.transitTitle;
+    document.getElementById("transitDesc").innerText = data.transitDesc;
+    document.getElementById("destStatusText").innerText = data.destText;
+    document.getElementById("tier2StatusBadge").innerText = data.tier2Badge;
+    document.getElementById("otpCodeDisplay").innerText = data.otpState;
+
+    // Update Rider Marker Location Simulated
+    const rider = document.getElementById("riderMarker");
+    if (stepNumber === 1) {
+      rider.style.top = "75%";
+      rider.style.left = "15%";
+    } else if (stepNumber === 2) {
+      rider.style.top = "60%";
+      rider.style.left = "25%";
+    } else if (stepNumber === 3) {
+      rider.style.top = "45%";
+      rider.style.left = "40%";
+    } else if (stepNumber === 4) {
+      rider.style.top = "30%";
+      rider.style.left = "58%";
+    } else if (stepNumber === 5) {
+      rider.style.top = "18%";
+      rider.style.left = "76%";
+    }
+
+    showToast(`Simulation switched to Step ${stepNumber}: ${data.orderTag}`);
+  }
+
+  function showToast(msg, icon = "check_circle") {
+    const toast = document.getElementById("actionToast");
+    document.getElementById("toastMessage").innerText = msg;
+    document.getElementById("toastIcon").innerText = icon;
+    toast.classList.remove("opacity-0", "pointer-events-none");
+    toast.classList.add("opacity-100");
+    setTimeout(() => {
+      toast.classList.add("opacity-0", "pointer-events-none");
+      toast.classList.remove("opacity-100");
+    }, 2400);
+  }
+
+  function downloadInvoiceMock() {
+    showToast("Generating Tax Invoice PDF (৳187.50)...", "receipt");
+  }
+
+  function reportIssuePrompt() {
+    showToast("Opening Instant QA Ticket for #SL-88421", "support_agent");
+  }
+
+  function pingRiderNotice() {
+    showToast("Chatting with Tanvir Ahmed...", "chat");
+  }
+
+  function shareTrackingLink() {
+    showToast("Live tracking link copied to clipboard!", "link");
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="shop-home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Shop</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="bulk-b2b" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Bulk/B2B</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="track-orders" href="#"><span class="material-symbols-outlined text-[22px]">route</span><span class="font-label-sm text-label-sm">Track</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="account-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a></div></nav></body></html>

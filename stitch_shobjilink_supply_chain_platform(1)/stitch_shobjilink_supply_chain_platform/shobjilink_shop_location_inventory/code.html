@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface-variant": "#404941", "primary": "#003b1b", "on-primary-fixed": "#00210d", "tertiary": "#5d1d00", "secondary-fixed-dim": "#4ae176", "surface": "#f9f9ff", "tertiary-container": "#822c00", "on-secondary-container": "#007432", "primary-fixed-dim": "#96d5a3", "inverse-primary": "#96d5a3", "surface-container": "#e7eeff", "surface-container-lowest": "#ffffff", "outline-variant": "#c0c9be", "on-primary-container": "#87c695", "tertiary-fixed": "#ffdbce", "on-secondary-fixed-variant": "#005321", "on-surface": "#111c2d", "surface-container-highest": "#d8e3fb", "surface-bright": "#f9f9ff", "on-secondary": "#ffffff", "error-container": "#ffdad6", "outline": "#717970", "inverse-surface": "#263143", "secondary": "#006e2f", "inverse-on-surface": "#ecf1ff", "primary-container": "#14532d", "on-primary": "#ffffff", "secondary-fixed": "#6bff8f", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#370e00", "tertiary-fixed-dim": "#ffb599", "on-background": "#111c2d", "background": "#f9f9ff", "surface-container-low": "#f0f3ff", "on-primary-fixed-variant": "#12512c", "primary-fixed": "#b1f2be", "secondary-container": "#6bff8f", "surface-variant": "#d8e3fb", "error": "#ba1a1a", "surface-dim": "#cfdaf2", "on-error-container": "#93000a", "on-secondary-fixed": "#002109", "on-error": "#ffffff", "on-tertiary-container": "#ff9f7a", "surface-tint": "#2e6a41", "surface-container-high": "#dee8ff", "on-tertiary-fixed-variant": "#7f2b00" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "margin": "1rem", "margin-desktop": "2.5rem", "margin-tablet": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-lg": ["Manrope"], "title-md": ["Manrope"], "title-lg": ["Manrope"], "body-md": ["Inter"], "headline-lg-mobile": ["Manrope"], "headline-sm": ["Manrope"], "body-lg": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "headline-xl": ["Manrope"], "headline-md": ["Manrope"], "headline-xl-mobile": ["Manrope"] }, fontSize: { "headline-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "title-lg": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "500" }], "label-sm": ["10px", { lineHeight: "14px", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["44px", { lineHeight: "52px", fontWeight: "800" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-28 flex flex-col justify-between px-margin py-space-xs"><div class="flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="ShobjiLink Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2A_9KHn7I8k93Z2wwdXfZHZVzTfaxrQkUZZLwanHiyYiYluRSDFDmlJkO63FGUH1u13_vOt0mrw_zkkMh3z0j8fRWrJo71uOKIHZ02bp0W1zqFnFJPAuo6XgLHVSaxxPxWibT4fMYAlG3ouvSQF8d22Mq-pGOLRW652kVeOqaaQNUE8wDsT06p4o0O2V9EGdGUDz89_8ce_wS8GilS_D_oOzI8e7uxpwC1Qiyo3O8"><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight leading-none">ShobjiLink</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Shop Home</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Select Hub" class="h-9 px-space-xs bg-surface-container-low rounded-full flex items-center gap-1 text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span class="font-label-md text-label-md">Dhaka</span><span class="material-symbols-outlined text-[16px] text-outline">keyboard_arrow_down</span></button><button aria-label="Notifications" class="relative w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between bg-surface-container-low rounded-lg px-space-sm py-1"><div class="flex items-center gap-1.5 overflow-hidden"><span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Role:</span><span class="font-label-md text-label-md text-primary font-bold truncate">Customer (Wholesale Retail)</span></div><button class="h-7 px-space-xs bg-surface-container-lowest text-primary rounded-full flex items-center gap-0.5 hover:bg-surface-container shadow-[0_1px_4px_rgba(0,0,0,0.03)] transition-colors"><span class="font-label-sm text-label-sm font-semibold">Switch</span><span class="material-symbols-outlined text-[16px]">swap_horiz</span></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-28 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Top Location Selector Bar with Live Regional Hub Chips -->
+<section class="px-margin pt-space-xs pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">hub</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Select Regional Hub</span>
+</div>
+<div class="flex items-center gap-1 bg-secondary-fixed/20 px-2 py-0.5 rounded-full">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">Live Stock Sync</span>
+</div>
+</div>
+<!-- Hub Switcher Buttons -->
+<div class="grid grid-cols-3 gap-space-xs" id="hub-switchers">
+<button class="hub-pill active-hub flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-primary text-on-primary shadow-sm transition-all duration-200" id="tab-sylhet" onclick="switchHub('sylhet')">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold leading-tight">Sylhet</span>
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container leading-none mt-0.5">Sadar Hub (Active)</span>
+</button>
+<button class="hub-pill flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" id="tab-chattogram" onclick="switchHub('chattogram')">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-semibold leading-tight">Chattogram</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">Pahartali Hub</span>
+</button>
+<button class="hub-pill flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" id="tab-dhaka" onclick="switchHub('dhaka')">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-semibold leading-tight">Dhaka</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none mt-0.5">Karwan Bazar Hub</span>
+</button>
+</div>
+<!-- Hub Stock Inventory Telemetry Pill Strip -->
+<div class="bg-surface-container-low rounded-xl p-space-xs flex items-center justify-between text-on-surface shadow-sm" id="hub-summary-banner">
+<div class="flex items-center gap-2 overflow-x-auto py-0.5 text-nowrap">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">inventory_2</span> <span class="font-bold" id="hub-name-label">Sylhet Sadar Stock:</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm" id="pill-potatoes">
+          Alu: 200 kg (৳35)
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm" id="pill-eggplant">
+          Begun: 80 kg (৳55)
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm" id="pill-tomato">
+          Tometo: 0 kg (Out)
+        </span>
+</div>
+</div>
+</section>
+<!-- Hero Promo Banner with Language Toggle -->
+<section class="px-margin my-space-xs">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary-container via-primary to-primary text-on-primary p-space-md shadow-md">
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm tracking-wide uppercase">
+<span class="material-symbols-outlined text-[13px]">bolt</span> Farm-to-Kitchen Express
+          </span>
+<!-- Language Toggle Switch -->
+<div class="inline-flex items-center p-0.5 bg-on-primary/15 backdrop-blur-md rounded-full">
+<button class="px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold bg-surface-container-lowest text-primary shadow-sm transition-all" id="lang-en" onclick="toggleLang('en')">EN</button>
+<button class="px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium text-on-primary hover:text-surface-bright transition-all" id="lang-bn" onclick="toggleLang('bn')">বাংলা</button>
+</div>
+</div>
+<div class="mt-1">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile font-bold tracking-tight text-surface-bright leading-tight" id="promo-headline">Fresh from the Source. Delivered to Your Door.</h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim mt-1" id="promo-sub">
+            ৳0 delivery fee above ৳500 on all seasonal morning harvest.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<div class="flex items-center gap-1 bg-on-primary/10 rounded-lg px-2 py-1 text-surface-bright">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">timer</span>
+<span class="font-label-md text-label-md font-semibold">45 Mins SLA</span>
+</div>
+<div class="flex items-center gap-1 bg-on-primary/10 rounded-lg px-2 py-1 text-surface-bright">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">payments</span>
+<span class="font-label-md text-label-md font-semibold">COD &amp; bKash</span>
+</div>
+</div>
+</div>
+<!-- Subtle Decorative Leaf Pattern via SVG -->
+<div class="absolute -right-6 -bottom-6 opacity-15 pointer-events-none text-surface-bright">
+<svg fill="currentColor" height="140" viewBox="0 0 24 24" width="140">
+<path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"></path>
+</svg>
+</div>
+</div>
+</section>
+<!-- Live Cart Mini Quick Bar (Sylhet Sadar) -->
+<section class="px-margin my-space-xs">
+<div class="bg-surface-container rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">shopping_basket</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold flex items-center justify-center" id="cart-item-badge">3</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface" id="cart-summary-text">3 items • ৳160 total</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[14px]">near_me</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sylhet Sadar ETA: <span class="text-secondary font-bold">35 mins</span></span>
+</div>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-3 py-2 rounded-lg font-label-lg text-label-lg font-bold flex items-center gap-1 shadow-sm active:scale-95 transition-all" onclick="handleQuickCheckout()">
+<span class="">Checkout</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Section Title & Live Produce List Header -->
+<section class="px-margin pt-space-xs pb-space-xs flex items-center justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Regional Fresh Harvest</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live stock directly updated by Upazila collection points</p>
+</div>
+<span class="material-symbols-outlined text-primary text-[22px]">eco</span>
+</section>
+<!-- Interactive Product Cards Grid -->
+<section class="px-margin flex flex-col gap-space-sm" id="product-container">
+<!-- Product 1: Potato (Bogura Diamond Alu) -->
+<div class="product-item bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm relative overflow-hidden" data-product="potato">
+<div class="w-28 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A clean top-down wooden crate filled with washed fresh Bogura Diamond potatoes with light golden skin, natural farm lighting with soft morning shadows and dew drops, agricultural clean catalog style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9lemfe7vJk1gJYynon8IcaRKCyTYAUMgGClhxH80rYxcnM0i3LoeCAJAd--Tgtc_PnxNu_QvtiZaHSgCPHxW2gmCxGQUdK4addZhOphK-JTnXahqmyBq7z08cfyiV0MGkcYqvdQmW1MCSHbBlHQNSszWE77JEbnF0NSOeV-lP6TTX12o5dfAEPlYsT5g6piEhf0yeUs70RfjyljVHCSkxOsOVhLHbvcnqpOgB_KgH">
+<span class="absolute top-1 left-1 bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full font-label-sm">Grade A</span>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Diamond Alu (আলু)</h4>
+<span class="stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed" id="badge-potato-stock">
+              In Stock: 200 kg
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bogura Cold Store Origin</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-title-lg text-title-lg font-bold text-primary" id="price-potato">৳35</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5" id="stepper-potato">
+<button class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm" onclick="decrementQty('potato')">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface" id="qty-potato">1 kg</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm" onclick="incrementQty('potato')">+</button>
+</div>
+<button class="h-8 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform" id="btn-potato" onclick="addToCart('Diamond Alu', 35, 'potato')">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span class="">Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2: Eggplant (Gol Begun - Habiganj) -->
+<div class="product-item bg-surface-container-lowest rounded-xl p-space-sm flex gap-space-sm shadow-sm relative overflow-hidden" data-product="eggplant">
+<div class="w-28 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Glossy vibrant deep-purple round eggplants known as Gol Begun from Habiganj freshly arranged in a rustic jute basket, morning golden hour backlight, crisp farm fresh product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbClftu5SUlgiv1AlB-x9GV6_q1Nb-mH_sf-LCvwmeTbMB1JaktCKHQOqs2EKTlsHHovFfT-3slJWKIoVkngwT4d9guua5aigi7I9HPh2CsTTz_LPjrSVqliDfhgHTn5_Brt9OVuQqHU8hK3MihdPLnJ40vQRQOOhSeZTO39yhkYcJmdhovvXsBZo1e1Ybx963yPtpMgebquvTlisMB_PvaxjPhBSjF4uHiO9JCQTZ">
+<span class="absolute top-1 left-1 bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full font-label-sm">Fresh Harvest</span>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Gol Begun (বেগুন)</h4>
+<span class="stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed" id="badge-eggplant-stock">
+              In Stock: 80 kg
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Habiganj Agro-cluster Direct</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-title-lg text-title-lg font-bold text-primary" id="price-eggplant">৳55</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5" id="stepper-eggplant">
+<button class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm" onclick="decrementQty('eggplant')">-</button>
+<span class="w-8 text-center font-label-md text-label-md font-bold text-on-surface" id="qty-eggplant">1 kg</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm" onclick="incrementQty('eggplant')">+</button>
+</div>
+<button class="h-8 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform" id="btn-eggplant" onclick="addToCart('Gol Begun', 55, 'eggplant')">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span class="">Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3: Tomato (Sreemangal Deshi Tometo) -->
+<div class="product-item bg-surface-container-lowest rounded-xl p-space-sm flex flex-col gap-space-xs shadow-sm relative overflow-hidden" data-product="tomato">
+<div class="flex gap-space-sm">
+<div class="w-28 h-28 rounded-lg overflow-hidden shrink-0 relative bg-surface-container-low opacity-75">
+<img class="w-full h-full object-cover" data-alt="Vibrant cluster of ripe red and orange farm fresh vine tomatoes from Sreemangal Bangladesh resting on a clean white linen surface with green leaves, soft ambient daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwSdoXhEWC4uQL5ZpWyg6WA1CNTYfV9Lo2W7bY1piHuHO10tzmCpDRMxuKUhIBlDB9BRjEj2bHdQ6e_zhmgnmFEOUKLgtIuNGsWWBHErQ15eI7JN9fOph17T6Zqeg7rpy62cUUDr06n_2V959kRdbNME7hv-OQTU1mbnu1adcAdogN99MHv9kK7-NUimGiUTYe8pIdpCUNZyGzuccedAM5U29WXsWZMWVxloNWQCd3">
+<span class="absolute top-1 left-1 bg-surface-variant text-on-surface-variant text-[10px] font-bold px-1.5 py-0.5 rounded-full font-label-sm" id="tag-tomato-status">Deshi Variety</span>
+</div>
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-start justify-between gap-1">
+<h4 class="font-title-md text-title-md text-on-surface font-bold truncate">Deshi Tometo (টমেটো)</h4>
+<span class="stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-error-container text-on-error-container" id="badge-tomato-stock">
+                0 kg UNAVAILABLE
+              </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sreemangal Hills Valley</p>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-title-lg text-title-lg font-bold text-on-surface-variant" id="price-tomato">৳0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<!-- Action row dynamically toggled -->
+<div class="mt-2 pt-1" id="action-tomato-row">
+<button class="w-full h-8 px-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1 active:bg-surface-container transition-colors" onclick="handleNotifyStock('Deshi Tometo')">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span class="">Notify Sylhet Restock</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Out-of-Stock Context Warning Ribbon -->
+<div class="bg-error-container/40 rounded-lg p-2 flex items-center justify-between" id="banner-tomato-oos">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0">inventory</span>
+<span class="font-body-sm text-body-sm text-on-error-container truncate">Out of stock at Sylhet Hub! Available in Chattogram/Dhaka.</span>
+</div>
+<button class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shrink-0 shadow-xs" onclick="switchHub('chattogram')">
+          View CTG (৳70)
+        </button>
+</div>
+</div>
+</section>
+<!-- How It Works in Bangladesh - Farm to Fork Pipeline -->
+<section class="px-margin my-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">conversion_path</span>
+<h4 class="font-title-md text-title-md text-primary font-bold">How ShobjiLink Works in Bangladesh</h4>
+</div>
+<div class="grid grid-cols-3 gap-2 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">agriculture</span>
+</div>
+<span class="font-title-sm text-label-md text-on-surface font-bold leading-tight">Farmer Hubs</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant mt-0.5">Direct Upazila Sourcing</span>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">fact_check</span>
+</div>
+<span class="font-title-sm text-label-md text-on-surface font-bold leading-tight" id="hub-process-step">Sylhet Branch</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant mt-0.5">Automated QA &amp; Grade</span>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">electric_moped</span>
+</div>
+<span class="font-title-sm text-label-md text-on-surface font-bold leading-tight">EV Delivery</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant mt-0.5">35–45 Mins to Kitchen</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Payment Options Floating Micro Bar -->
+<section class="px-margin mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Payment Protected</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">bKash • Nagad • Cash on Delivery</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm font-semibold text-primary">৳ bKash</span>
+<span class="px-2 py-1 rounded bg-surface-container font-label-sm text-label-sm font-semibold text-primary">COD</span>
+</div>
+</div>
+</section>
+<!-- Role Switcher Quick Bar -->
+<section class="px-margin mb-space-sm">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-sm flex items-center justify-between shadow-md">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-inverse-primary text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-inverse-on-surface/75 uppercase tracking-wider font-semibold">Agricultural Portal Switch</p>
+<p class="font-title-md text-title-md font-bold text-inverse-on-surface">Switch Active Workspace</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm active:scale-95 transition-all" onclick="handleRoleJump('B2B Wholesale Hub')">
+          B2B Aroth
+        </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-on-surface-variant/40 text-inverse-on-surface font-label-sm text-label-sm font-medium hover:bg-on-surface-variant transition-all" onclick="handleRoleJump('Branch QA Manager')">
+          Branch QA
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Feedback Toast Container -->
+<div class="fixed top-32 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-label-md text-label-md shadow-lg pointer-events-none transition-opacity duration-300 z-50 flex items-center gap-2 opacity-0" id="toast-message">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span id="toast-text" class="">Added 1 kg of Diamond Alu to Cart!</span>
+</div>
+</div>
+<script>
+  // Hub benchmark dataset strictly mapped to scenario requirements
+  const HUB_DATA = {
+    sylhet: {
+      name: "Sylhet Sadar",
+      stepText: "Sylhet Branch",
+      potatoes: { qty: 200, price: 35, available: true },
+      eggplant: { qty: 80, price: 55, available: true },
+      tomato: { qty: 0, price: 0, available: false, oosNotice: "Out of stock at Sylhet Hub! Available in Chattogram/Dhaka." }
+    },
+    chattogram: {
+      name: "Chattogram Hub",
+      stepText: "Chattogram Branch",
+      potatoes: { qty: 200, price: 35, available: true },
+      tomato: { qty: 50, price: 70, available: true },
+      eggplant: { qty: 0, price: 0, available: false, oosNotice: "Out of stock at Chattogram Hub! Available in Sylhet/Dhaka." }
+    },
+    dhaka: {
+      name: "Dhaka Hub",
+      stepText: "Dhaka Central QA",
+      tomato: { qty: 100, price: 65, available: true },
+      eggplant: { qty: 60, price: 50, available: true },
+      potatoes: { qty: 0, price: 0, available: false, oosNotice: "Out of stock at Dhaka Hub! Available in Bogura/Sylhet." }
+    }
+  };
+
+  let currentHub = 'sylhet';
+  let quantities = { potato: 1, eggplant: 1, tomato: 1 };
+  let cartCount = 2;
+  let cartTotal = 125;
+  let activeLang = 'en';
+
+  const translations = {
+    en: {
+      promoTitle: "Fresh from Upazilas, Delivered in 45 Mins.",
+      promoSub: "৳0 delivery fee above ৳500 on all seasonal morning harvest."
+    },
+    bn: {
+      promoTitle: "উপজেলা থেকে তাজা সবজি, ৪৫ মিনিটে ঘরে পৌঁছে যাবে।",
+      promoSub: "৳৫০০ এর বেশি অর্ডারে ডেলিভারি চার্জ সম্পূর্ণ ফ্রি।"
+    }
+  };
+
+  function switchHub(hubKey) {
+    currentHub = hubKey;
+    const data = HUB_DATA[hubKey];
+
+    // Update active tab buttons visual style
+    const hubs = ['sylhet', 'chattogram', 'dhaka'];
+    hubs.forEach(h => {
+      const btn = document.getElementById(`tab-${h}`);
+      if (h === hubKey) {
+        btn.className = "hub-pill active-hub flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-primary text-on-primary shadow-sm transition-all duration-200";
+      } else {
+        btn.className = "hub-pill flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200";
+      }
+    });
+
+    // Update Banner telemetry
+    document.getElementById('hub-name-label').textContent = `${data.name} Stock:`;
+    document.getElementById('hub-process-step').textContent = data.stepText;
+
+    // 1. Potato Card
+    const potatoBadge = document.getElementById('badge-potato-stock');
+    const potatoPrice = document.getElementById('price-potato');
+    const potatoBtn = document.getElementById('btn-potato');
+    const potatoStepper = document.getElementById('stepper-potato');
+
+    if (data.potatoes.available) {
+      potatoBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed";
+      potatoBadge.textContent = `In Stock: ${data.potatoes.qty} kg`;
+      potatoPrice.textContent = `৳${data.potatoes.price}`;
+      potatoBtn.disabled = false;
+      potatoBtn.className = "h-8 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform";
+      potatoStepper.classList.remove('opacity-40', 'pointer-events-none');
+    } else {
+      potatoBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-error-container text-on-error-container";
+      potatoBadge.textContent = "0 kg UNAVAILABLE";
+      potatoPrice.textContent = "৳0";
+      potatoBtn.disabled = true;
+      potatoBtn.className = "h-8 px-3 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md font-bold flex items-center gap-1 opacity-50 cursor-not-allowed";
+      potatoStepper.classList.add('opacity-40', 'pointer-events-none');
+    }
+
+    // 2. Eggplant Card
+    const eggBadge = document.getElementById('badge-eggplant-stock');
+    const eggPrice = document.getElementById('price-eggplant');
+    const eggBtn = document.getElementById('btn-eggplant');
+    const eggStepper = document.getElementById('stepper-eggplant');
+
+    if (data.eggplant.available) {
+      eggBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed";
+      eggBadge.textContent = `In Stock: ${data.eggplant.qty} kg`;
+      eggPrice.textContent = `৳${data.eggplant.price}`;
+      eggBtn.disabled = false;
+      eggBtn.className = "h-8 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform";
+      eggStepper.classList.remove('opacity-40', 'pointer-events-none');
+    } else {
+      eggBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-error-container text-on-error-container";
+      eggBadge.textContent = "0 kg UNAVAILABLE";
+      eggPrice.textContent = "৳0";
+      eggBtn.disabled = true;
+      eggBtn.className = "h-8 px-3 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-md text-label-md font-bold flex items-center gap-1 opacity-50 cursor-not-allowed";
+      eggStepper.classList.add('opacity-40', 'pointer-events-none');
+    }
+
+    // 3. Tomato Card
+    const tomatoBadge = document.getElementById('badge-tomato-stock');
+    const tomatoPrice = document.getElementById('price-tomato');
+    const tomatoActionRow = document.getElementById('action-tomato-row');
+    const tomatoOosBanner = document.getElementById('banner-tomato-oos');
+
+    if (data.tomato.available) {
+      tomatoBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-secondary-fixed text-on-secondary-fixed";
+      tomatoBadge.textContent = `In Stock: ${data.tomato.qty} kg`;
+      tomatoPrice.textContent = `৳${data.tomato.price}`;
+      tomatoPrice.className = "font-title-lg text-title-lg font-bold text-primary";
+      tomatoOosBanner.classList.add('hidden');
+      tomatoActionRow.innerHTML = `
+        <div class="flex items-center justify-between">
+          <div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+            <button onclick="decrementQty('tomato')" class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm">-</button>
+            <span id="qty-tomato" class="w-8 text-center font-label-md text-label-md font-bold text-on-surface">${quantities.tomato} kg</span>
+            <button onclick="incrementQty('tomato')" class="w-7 h-7 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface active:bg-surface-container text-sm font-bold shadow-sm">+</button>
+          </div>
+          <button onclick="addToCart('Deshi Tometo', ${data.tomato.price}, 'tomato')" class="h-8 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 active:scale-95 transition-transform">
+            <span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            <span>Add</span>
+          </button>
+        </div>
+      `;
+    } else {
+      tomatoBadge.className = "stock-badge shrink-0 px-2 py-0.5 rounded-full text-[10px] font-bold bg-error-container text-on-error-container";
+      tomatoBadge.textContent = "0 kg UNAVAILABLE";
+      tomatoPrice.textContent = "৳0";
+      tomatoPrice.className = "font-title-lg text-title-lg font-bold text-on-surface-variant";
+      tomatoOosBanner.classList.remove('hidden');
+      tomatoActionRow.innerHTML = `
+        <button onclick="handleNotifyStock('Deshi Tometo')" class="w-full h-8 px-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1 active:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-[16px]">notifications_active</span>
+          <span>Notify ${data.name} Restock</span>
+        </button>
+      `;
+    }
+
+    // Refresh telemetry pill bar
+    const pAlu = document.getElementById('pill-potatoes');
+    const pBegun = document.getElementById('pill-eggplant');
+    const pTom = document.getElementById('pill-tomato');
+
+    pAlu.textContent = data.potatoes.available ? `Alu: ${data.potatoes.qty} kg (৳${data.potatoes.price})` : "Alu: Out";
+    pAlu.className = data.potatoes.available ? "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm" : "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm";
+
+    pBegun.textContent = data.eggplant.available ? `Begun: ${data.eggplant.qty} kg (৳${data.eggplant.price})` : "Begun: Out";
+    pBegun.className = data.eggplant.available ? "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm" : "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm";
+
+    pTom.textContent = data.tomato.available ? `Tometo: ${data.tomato.qty} kg (৳${data.tomato.price})` : "Tometo: Out";
+    pTom.className = data.tomato.available ? "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm" : "inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm";
+
+    showToast(`Switched to ${data.name} Inventory`);
+  }
+
+  function incrementQty(item) {
+    quantities[item] = (quantities[item] || 1) + 1;
+    const el = document.getElementById(`qty-${item}`);
+    if (el) el.textContent = `${quantities[item]} kg`;
+  }
+
+  function decrementQty(item) {
+    if ((quantities[item] || 1) > 1) {
+      quantities[item] -= 1;
+      const el = document.getElementById(`qty-${item}`);
+      if (el) el.textContent = `${quantities[item]} kg`;
+    }
+  }
+
+  function addToCart(itemName, price, itemKey) {
+    const qty = quantities[itemKey] || 1;
+    cartCount += qty;
+    cartTotal += (price * qty);
+
+    document.getElementById('cart-item-badge').textContent = cartCount;
+    document.getElementById('cart-summary-text').textContent = `${cartCount} items • ৳${cartTotal} total`;
+
+    showToast(`Added ${qty} kg of ${itemName} to Cart!`);
+  }
+
+  function toggleLang(lang) {
+    activeLang = lang;
+    const enBtn = document.getElementById('lang-en');
+    const bnBtn = document.getElementById('lang-bn');
+
+    if (lang === 'bn') {
+      bnBtn.className = "px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold bg-surface-container-lowest text-primary shadow-sm transition-all";
+      enBtn.className = "px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium text-on-primary hover:text-surface-bright transition-all";
+      document.getElementById('promo-headline').textContent = translations.bn.promoTitle;
+      document.getElementById('promo-sub').textContent = translations.bn.promoSub;
+    } else {
+      enBtn.className = "px-2 py-0.5 rounded-full font-label-sm text-label-sm font-bold bg-surface-container-lowest text-primary shadow-sm transition-all";
+      bnBtn.className = "px-2 py-0.5 rounded-full font-label-sm text-label-sm font-medium text-on-primary hover:text-surface-bright transition-all";
+      document.getElementById('promo-headline').textContent = translations.en.promoTitle;
+      document.getElementById('promo-sub').textContent = translations.en.promoSub;
+    }
+  }
+
+  function handleQuickCheckout() {
+    showToast(`Navigating to 1-Tap Checkout (৳${cartTotal})`);
+  }
+
+  function handleNotifyStock(itemName) {
+    showToast(`Alert set! We will SMS you when ${itemName} arrives.`);
+  }
+
+  function handleRoleJump(roleName) {
+    showToast(`Switching workspace to: ${roleName}`);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-message');
+    const toastText = document.getElementById('toast-text');
+    toastText.textContent = message;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+
+    clearTimeout(window._toastTimeout);
+    window._toastTimeout = setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2400);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 transition-colors text-primary font-bold" data-path="shop-home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Shop</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="categories" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-label-sm text-label-sm">Categories</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="bulk-b2b" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Bulk/B2B</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="track-orders" href="#"><span class="material-symbols-outlined text-[22px]">route</span><span class="font-label-sm text-label-sm">Track</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="account-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm">Dashboard</span></a></div></nav>
+
+</body></html>

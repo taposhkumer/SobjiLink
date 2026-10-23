@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#123b28" />
+    <meta
+      name="description"
+      content="Explore the interactive ShobjiLink supply-chain platform prototype."
+    />
+    <title>ShobjiLink — Prototype</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: #17231b;
+        background: #f4f6f0;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        --green: #14532d;
+        --green-dark: #103d25;
+        --green-soft: #e6f2e8;
+        --muted: #758078;
+        --border: #e5e9e2;
+        --surface: #fff;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; min-width: 320px; min-height: 100vh; }
+      button, input { font: inherit; }
+      button { cursor: pointer; }
+      .app { min-height: 100vh; display: grid; grid-template-columns: 264px minmax(0, 1fr); }
+      .sidebar {
+        position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column;
+        padding: 22px 14px 14px; background: var(--green-dark); color: #f4fff5;
+        overflow: hidden;
+      }
+      .brand { display: flex; align-items: center; gap: 11px; padding: 2px 10px 24px; }
+      .brand-mark {
+        display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px;
+        background: #d9f99d; color: #163f25; font-size: 22px;
+      }
+      .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -.6px; }
+      .brand-name span { color: #a7f3b4; }
+      .brand-caption { margin-top: 3px; color: #afc4b3; font-size: 10px; letter-spacing: .04em; }
+      .workspace {
+        display: flex; align-items: center; gap: 10px; margin: 0 3px 20px; padding: 10px;
+        border: 1px solid #ffffff20; border-radius: 12px; background: #ffffff0b;
+      }
+      .workspace-icon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: #ffffff18; }
+      .workspace strong { display: block; font-size: 12px; }
+      .workspace small { display: block; margin-top: 3px; color: #afc4b3; font-size: 10px; }
+      .nav-scroll { min-height: 0; overflow: auto; scrollbar-width: thin; scrollbar-color: #ffffff30 transparent; }
+      .nav-label { padding: 8px 10px; color: #94ad99; font-size: 9px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+      .nav-list { display: grid; gap: 3px; }
+      .nav-item {
+        display: flex; width: 100%; align-items: center; gap: 10px; padding: 9px 10px;
+        border: 0; border-radius: 9px; background: transparent; color: #d3e0d5;
+        text-align: left; font-size: 12px; transition: background .15s, color .15s;
+      }
+      .nav-item:hover { background: #ffffff12; color: white; }
+      .nav-item.active { background: #d9f99d; color: #173d25; font-weight: 700; }
+      .nav-icon { width: 18px; flex: 0 0 18px; text-align: center; font-size: 15px; }
+      .nav-item[hidden] { display: none; }
+      .sidebar-bottom { margin-top: auto; padding: 14px 8px 3px; }
+      .prototype-note { border-top: 1px solid #ffffff20; padding: 13px 3px 0; color: #afc4b3; font-size: 10px; line-height: 1.55; }
+      .prototype-note strong { color: #e3eee4; }
+      .main { min-width: 0; min-height: 100vh; display: flex; flex-direction: column; }
+      .topbar {
+        position: sticky; top: 0; z-index: 3; display: flex; align-items: center; gap: 16px;
+        min-height: 76px; padding: 12px 26px; border-bottom: 1px solid var(--border);
+        background: #ffffffed; backdrop-filter: blur(14px);
+      }
+      .page-heading { min-width: 175px; flex: 1; }
+      .eyebrow { margin-bottom: 4px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+      .page-title { margin: 0; font-size: 16px; font-weight: 750; letter-spacing: -.3px; }
+      .top-actions { display: flex; align-items: center; gap: 8px; }
+      .search {
+        display: flex; align-items: center; gap: 8px; width: min(245px, 24vw); height: 37px;
+        padding: 0 11px; border: 1px solid var(--border); border-radius: 9px; background: #f8faf7;
+      }
+      .search-icon { color: #738078; font-size: 15px; }
+      .search input { width: 100%; border: 0; outline: 0; background: transparent; color: #27342b; font-size: 11px; }
+      .search input::placeholder { color: #87928a; }
+      .icon-button, .open-button {
+        display: grid; place-items: center; min-width: 37px; height: 37px; padding: 0 10px;
+        border: 1px solid var(--border); border-radius: 9px; background: white; color: #405046;
+      }
+      .icon-button:hover, .open-button:hover { border-color: #b8c9bb; background: #f4f8f3; }
+      .open-button { display: flex; gap: 7px; font-size: 11px; font-weight: 650; }
+      .mobile-menu { display: none; }
+      .canvas { flex: 1; min-height: 0; padding: 18px 22px 22px; }
+      .frame-wrap {
+        position: relative; height: calc(100vh - 114px); min-height: 480px; overflow: hidden;
+        border: 1px solid #dfe5dc; border-radius: 14px; background: #f9f9ff;
+        box-shadow: 0 10px 30px #183e2510;
+      }
+      iframe { width: 100%; height: 100%; border: 0; background: #f9f9ff; }
+      .toast {
+        position: fixed; right: 22px; bottom: 20px; z-index: 10; padding: 11px 15px;
+        border: 1px solid #d9e5da; border-radius: 10px; background: #fff; color: #244a30;
+        box-shadow: 0 10px 35px #102b1a20; font-size: 12px; opacity: 0; pointer-events: none;
+        transform: translateY(8px); transition: .2s;
+      }
+      .toast.show { opacity: 1; transform: translateY(0); }
+      .empty { display: none; padding: 12px 10px; color: #c2d0c4; font-size: 11px; }
+      @media (max-width: 820px) {
+        .app { grid-template-columns: 220px minmax(0, 1fr); }
+        .topbar { gap: 10px; padding: 11px 16px; }
+        .canvas { padding: 13px; }
+        .search { width: min(210px, 25vw); }
+      }
+      @media (max-width: 620px) {
+        .app { display: block; }
+        .sidebar {
+          position: fixed; z-index: 8; left: 0; top: 0; width: 275px;
+          box-shadow: 12px 0 36px #0b211533; transform: translateX(-105%); transition: transform .2s ease;
+        }
+        .sidebar.open { transform: translateX(0); }
+        .mobile-menu { display: grid; flex: 0 0 36px; }
+        .topbar { min-height: 68px; padding: 10px 12px; gap: 9px; }
+        .page-heading { min-width: 90px; }
+        .page-title { font-size: 13px; }
+        .eyebrow { font-size: 8px; }
+        .search { width: 38px; padding: 0 10px; border-color: transparent; background: transparent; }
+        .search:focus-within { position: absolute; left: 58px; right: 12px; width: auto; background: white; border-color: var(--border); }
+        .search input { min-width: 0; }
+        .open-button { min-width: 36px; padding: 0 9px; font-size: 0; }
+        .open-button span { font-size: 15px; }
+        .canvas { padding: 8px; }
+        .frame-wrap { height: calc(100dvh - 84px); min-height: 420px; border-radius: 10px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar" id="sidebar" aria-label="Prototype pages">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">🌿</div>
+          <div>
+            <div class="brand-name">Shobji<span>Link</span></div>
+            <div class="brand-caption">FRESH FROM THE SOURCE</div>
+          </div>
+        </div>
+        <div class="workspace">
+          <div class="workspace-icon">⌂</div>
+          <div><strong>Supply chain platform</strong><small>Interactive prototype · 14 screens</small></div>
+        </div>
+        <div class="nav-scroll">
+          <div class="nav-label">Customer experience</div>
+          <nav class="nav-list" id="customerNav"></nav>
+          <div class="nav-label">Supply &amp; fulfillment</div>
+          <nav class="nav-list" id="supplyNav"></nav>
+          <div class="nav-label">Platform operations</div>
+          <nav class="nav-list" id="opsNav"></nav>
+          <div class="nav-label">Design variations</div>
+          <nav class="nav-list" id="variantsNav"></nav>
+          <p class="empty" id="emptyState">No screens match your search.</p>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="prototype-note"><strong>Prototype mode</strong><br />Sample screens and interactions only. No orders or payments are submitted.</div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="icon-button mobile-menu" id="menuButton" aria-label="Open page navigation">☰</button>
+          <div class="page-heading">
+            <div class="eyebrow" id="pageGroup">Customer experience</div>
+            <h1 class="page-title" id="pageTitle">Customer homepage</h1>
+          </div>
+          <div class="top-actions">
+            <label class="search" aria-label="Search prototype screens">
+              <span class="search-icon">⌕</span>
+              <input id="screenSearch" type="search" placeholder="Find a screen..." autocomplete="off" />
+            </label>
+            <button class="icon-button" id="reloadButton" aria-label="Reload current screen" title="Reload screen">↻</button>
+            <button class="icon-button" id="fullscreenButton" aria-label="Toggle full screen" title="Toggle full screen">⛶</button>
+            <button class="open-button" id="newTabButton" title="Open original screen in a new tab"><span>↗</span> Open screen</button>
+          </div>
+        </header>
+        <section class="canvas" aria-label="Selected ShobjiLink screen">
+          <div class="frame-wrap"><iframe id="screenFrame" title="ShobjiLink prototype screen"></iframe></div>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const screens = [
+        { id: "customer-homepage", title: "Customer homepage", group: "Customer experience", category: "customer", icon: "⌂", file: "customer_homepage_desktop_1/code.html", aliases: ["home", "shop-home", "account-dashboard"] },
+        { id: "shop-vegetables", title: "Shop vegetables", group: "Customer experience", category: "customer", icon: "🥬", file: "shop_vegetables_desktop/code.html", aliases: ["shop-vegetables"] },
+        { id: "produce-categories", title: "Produce categories", group: "Customer experience", category: "customer", icon: "▦", file: "vegetable_categories_produce_taxonomy_desktop/code.html", aliases: ["categories"] },
+        { id: "cart-checkout", title: "Cart & checkout", group: "Customer experience", category: "customer", icon: "🛒", file: "cart_checkout_desktop/code.html", aliases: ["cart-checkout"] },
+        { id: "order-tracking", title: "Live order tracking", group: "Customer experience", category: "customer", icon: "⌖", file: "live_order_traceability_tracker/code.html", aliases: ["track-order", "track-orders"] },
+        { id: "wholesale-b2b", title: "Wholesale & hotel supply", group: "Customer experience", category: "customer", icon: "🏨", file: "b2b_hotel_wholesale_supply_desktop/code.html", aliases: ["wholesale-b2b", "bulk-b2b", "commercial-b2b"] },
+        { id: "hotel-reorder", title: "Hotel quick reorder", group: "Customer experience", category: "customer", icon: "↻", file: "b2b_hotel_wholesale_supply/code.html", aliases: [] },
+        { id: "branch-inventory", title: "Shop location inventory", group: "Supply & fulfillment", category: "supply", icon: "▤", file: "shobjilink_shop_location_inventory/code.html", aliases: ["regional-inventory", "branch-inventories"] },
+        { id: "inbound-quality", title: "Inbound quality hub", group: "Supply & fulfillment", category: "supply", icon: "✓", file: "branch_manager_inbound_qa_hub/code.html", aliases: ["branch-inbound-qa"] },
+        { id: "payments", title: "Payment & settlement", group: "Supply & fulfillment", category: "supply", icon: "৳", file: "payment_settlement_desktop/code.html", aliases: ["financial-settlements", "financials-and-settlements"] },
+        { id: "operations-dashboard", title: "Operations dashboard", group: "Platform operations", category: "ops", icon: "◫", file: "platform_admin_operations_command_dashboard/code.html", aliases: ["overview", "live-orders-and-dispatch", "reefer-fleet-and-logistics", "upazila-suppliers-and-sourcing", "system-settings"] },
+        { id: "operations-command-center", title: "National command center", group: "Platform operations", category: "ops", icon: "◎", file: "platform_admin_operations_command_center_desktop/code.html", aliases: ["command-center", "reefer-logistics-fleet", "suppliers-upazila-aroths"] },
+        { id: "customer-homepage-alt", title: "Customer homepage · alternate", group: "Design variations", category: "variants", icon: "◇", file: "customer_homepage_desktop_2/code.html", aliases: [] },
+        { id: "homepage-concept", title: "Homepage concept", group: "Design variations", category: "variants", icon: "✳", file: "untitled_prototype/code.html", aliases: [] }
+      ];
+
+      const frame = document.getElementById("screenFrame");
+      const prototypeRoot = "stitch_shobjilink_supply_chain_platform(1)/stitch_shobjilink_supply_chain_platform";
+      const title = document.getElementById("pageTitle");
+      const group = document.getElementById("pageGroup");
+      const toast = document.getElementById("toast");
+      let activeScreen;
+      let toastTimer;
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toast.classList.remove("show"), 2400);
+      }
+
+      function getRouteScreen(route) {
+        return screens.find((screen) => screen.id === route || screen.aliases.includes(route));
+      }
+
+      function selectScreen(screen, updateHistory = true) {
+        if (!screen) return;
+        activeScreen = screen;
+        title.textContent = screen.title;
+        group.textContent = screen.group;
+        frame.title = screen.title + " — ShobjiLink";
+        if (frame.dataset.screen !== screen.id) {
+          frame.dataset.screen = screen.id;
+          frame.src = `${prototypeRoot}/${screen.file}`;
+        }
+        document.querySelectorAll(".nav-item").forEach((item) => {
+          const selected = item.dataset.screen === screen.id;
+          item.classList.toggle("active", selected);
+          item.setAttribute("aria-current", selected ? "page" : "false");
+        });
+        if (updateHistory && location.hash !== "#" + screen.id) {
+          history.pushState({ screen: screen.id }, "", "#" + screen.id);
+        }
+        document.getElementById("sidebar").classList.remove("open");
+      }
+
+      function buildNavigation() {
+        const containers = {
+          customer: document.getElementById("customerNav"),
+          supply: document.getElementById("supplyNav"),
+          ops: document.getElementById("opsNav"),
+          variants: document.getElementById("variantsNav")
+        };
+        screens.forEach((screen) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "nav-item";
+          button.dataset.screen = screen.id;
+          button.dataset.search = (screen.title + " " + screen.group).toLowerCase();
+          button.innerHTML = `<span class="nav-icon" aria-hidden="true">${screen.icon}</span><span>${screen.title}</span>`;
+          button.addEventListener("click", () => selectScreen(screen));
+          containers[screen.category].append(button);
+        });
+      }
+
+      function filterScreens(query) {
+        const normalized = query.trim().toLowerCase();
+        let visible = 0;
+        document.querySelectorAll(".nav-item").forEach((item) => {
+          const matches = !normalized || item.dataset.search.includes(normalized);
+          item.hidden = !matches;
+          if (matches) visible += 1;
+        });
+        document.getElementById("emptyState").style.display = visible ? "none" : "block";
+      }
+
+      function connectPrototypeNavigation() {
+        try {
+          const prototypeDocument = frame.contentDocument;
+          if (!prototypeDocument) return;
+          prototypeDocument.addEventListener("click", (event) => {
+            const anchor = event.target.closest("a[data-path]");
+            if (!anchor) return;
+            const destination = getRouteScreen(anchor.dataset.path);
+            if (!destination) return;
+            event.preventDefault();
+            selectScreen(destination);
+          });
+        } catch (error) {
+          showToast("This screen could not be connected to prototype navigation.");
+          console.error("Unable to connect prototype navigation:", error);
+        }
+      }
+
+      buildNavigation();
+      frame.addEventListener("load", connectPrototypeNavigation);
+      document.getElementById("screenSearch").addEventListener("input", (event) => filterScreens(event.target.value));
+      document.getElementById("menuButton").addEventListener("click", () => {
+        document.getElementById("sidebar").classList.toggle("open");
+      });
+      document.getElementById("reloadButton").addEventListener("click", () => frame.contentWindow.location.reload());
+      document.getElementById("fullscreenButton").addEventListener("click", async () => {
+        try {
+          if (document.fullscreenElement) await document.exitFullscreen();
+          else await document.querySelector(".frame-wrap").requestFullscreen();
+        } catch (error) {
+          showToast("Full screen is unavailable in this browser.");
+        }
+      });
+      document.getElementById("newTabButton").addEventListener("click", () => {
+        if (activeScreen) window.open(`${prototypeRoot}/${activeScreen.file}`, "_blank", "noopener,noreferrer");
+      });
+      window.addEventListener("popstate", () => selectScreen(getRouteScreen(location.hash.slice(1)) || screens[0], false));
+      window.addEventListener("hashchange", () => selectScreen(getRouteScreen(location.hash.slice(1)) || screens[0], false));
+      selectScreen(getRouteScreen(location.hash.slice(1)) || screens[0], false);
+    </script>
+  </body>
+</html>
